@@ -72,6 +72,24 @@ public class ASBToCosmosDBEventHandler implements EventHandler {
 		    integrationEvent.setStatus(product.getStatus());
 		    integrationEvent.setUnitMeasure(product.getUnitMeasure());
 		    
+		    integrationEvent.getHierarchy().setClassLevel(product.getHierarchy().getClassLevel());
+		    integrationEvent.getHierarchy().setClassName(product.getHierarchy().getClassName());
+		    integrationEvent.getHierarchy().setClazz(product.getHierarchy().getClazz());
+		    integrationEvent.getHierarchy().setDepartment(product.getHierarchy().getDepartment());
+		    integrationEvent.getHierarchy().setDepartmentLevel(product.getHierarchy().getDepartmentLevel());
+		    integrationEvent.getHierarchy().setDepartmentName(product.getHierarchy().getDepartmentName());
+		    integrationEvent.getHierarchy().setDivision(product.getHierarchy().getDivision());
+		    integrationEvent.getHierarchy().setDivisionLevel(product.getHierarchy().getDivisionLevel());
+		    integrationEvent.getHierarchy().setDivisionName(product.getHierarchy().getDivisionName());
+		    integrationEvent.getHierarchy().setSkuCode(product.getHierarchy().getSkuCode());
+		    integrationEvent.getHierarchy().setSkuCodeLevel(product.getHierarchy().getSkuCodeLevel());
+		    integrationEvent.getHierarchy().setSkuName(product.getHierarchy().getSkuName());
+		    integrationEvent.getHierarchy().setSubClass(product.getHierarchy().getSubClass());
+		    integrationEvent.getHierarchy().setSubClassLevel(product.getHierarchy().getSubClassLevel());
+		    integrationEvent.getHierarchy().setSubClassName(product.getHierarchy().getSubClassName());
+		    integrationEvent.getHierarchy().setSubDepartment(product.getHierarchy().getSubDepartment());
+		    integrationEvent.getHierarchy().setSubDepartmentLevel(product.getHierarchy().getSubDepartmentLevel());
+		    integrationEvent.getHierarchy().setSubDepartmentName(product.getHierarchy().getSubDepartmentName());
 		    publisher.publish(EventType.PRODUCT_CREATED, integrationEvent);
 			log.info("Published " + event.getMetadata());
 			

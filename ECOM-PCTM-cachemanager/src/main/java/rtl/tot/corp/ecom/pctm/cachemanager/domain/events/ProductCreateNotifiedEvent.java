@@ -41,7 +41,7 @@ public class ProductCreateNotifiedEvent implements EventDomain{
 		String qtyCasePack;
 		String nameCasePack;
 		String codeSUNAT;
-		Hierarchy hierarchy;
+		Hierarchy hierarchy = new Hierarchy();
 		
 		@Override
 		@JsonIgnore
