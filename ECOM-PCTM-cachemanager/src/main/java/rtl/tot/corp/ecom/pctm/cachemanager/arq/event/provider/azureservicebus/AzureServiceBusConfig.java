@@ -10,8 +10,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Primary;
 
-@Configuration
-public class AzureServiceBusConfig {
+
+//@Configuration
+//public class AzureServiceBusConfig {
 
 //    @Lazy
 //    @Bean
@@ -27,11 +28,11 @@ public class AzureServiceBusConfig {
 //        return new SubscriptionClientConfig();
 //    }
     
-    @Bean
+    //@Bean
     //@Lazy
     //@ConditionalOnProperty(prefix = "azure.servicebus", value = {"queue-name", "queue-receive-mode"})
-    public EventSubscriber queueSubsClient() throws InterruptedException, ServiceBusException {
-       
-        return new QueueSubsClientConfig();
-    }
-}
+//    public EventSubscriber queueSubsClient() throws InterruptedException, ServiceBusException {
+//       
+//        return new QueueSubsClientConfig();
+//    }
+//}

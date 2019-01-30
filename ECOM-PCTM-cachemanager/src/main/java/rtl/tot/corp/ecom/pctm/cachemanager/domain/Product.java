@@ -1,6 +1,7 @@
 package rtl.tot.corp.ecom.pctm.cachemanager.domain;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.validation.constraints.NotNull;
 
@@ -8,7 +9,6 @@ import org.springframework.data.annotation.Id;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
-
 /**
  * order object for order update API
  * 
@@ -25,52 +25,47 @@ public class Product implements Serializable {
 	@NotNull
 	String sku;
 	@NotNull
-	String skuDescription;
+	String description;
 	@NotNull
-	Integer levelID;
+	Long levelId;
 	@NotNull
-	String tradeMark;
+	String brand;
 	@NotNull
 	String model;
 	@NotNull
 	String productType;
 	@NotNull
-	String state;
+	String status;
 	@NotNull
 	Long ean;
 	@NotNull
+	String unitMeasure;
+	@NotNull
 	String saleUnit;
 	@NotNull
-	String skuPosDescription;
+	String posDescription;
 	@NotNull
-	String skuFlejeDescription;
+	String flejeDescription;
 	@NotNull
-	Integer proveedorID;
+	Integer codeSupplier;
 	@NotNull
-	String provider;
+	String nameSupplier;
 	@NotNull
-	String skuCode;
+	String qtyCasePack;
 	@NotNull
-	String skuCodeDescription;
+	String nameCasePack;
 	@NotNull
-	String subClass;
+	String codeSUNAT;
 	@NotNull
-	String subClassDescription;
+	List<EanSecundary> eanSecundary;
 	@NotNull
-	@JsonProperty(value="class")
-	String clazz;
+	Hierarchy hierarchy;
 	@NotNull
-	String classDescription;
+	LogisticAttributes logisticAttributes;
 	@NotNull
-	String subDepartment;
+	Conservation conservation;
 	@NotNull
-	String subDepartmentDescription;
+	Assortment assortment;
 	@NotNull
-	String department;
-	@NotNull
-	String departmentDescription;
-	@NotNull
-	String division;
-	@NotNull
-	String divisionDescription;
+	List<Attribute> attribute;
 }

@@ -38,8 +38,10 @@ ext {
 
 dependencies {
   //event-adapter-azure-service-bus-support
-  //  compile "corp.falabella.event:event-adapter-azureservicebus-support:${eventAdapterASBVersion}"
+  //compile "corp.falabella.event:event-adapter-azureservicebus-support:${eventAdapterASBVersion}"
 
+   	// https://mvnrepository.com/artifact/com.microsoft.azure/azure-eventgrid
+	compile group: 'com.microsoft.azure', name: 'azure-eventgrid', version: '1.2.0'
 	compileOnly("org.projectlombok:lombok:1.16.10")
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
@@ -47,6 +49,7 @@ dependencies {
 	// https://mvnrepository.com/artifact/com.microsoft.azure/spring-data-cosmosdb
 	//compile group: 'com.microsoft.azure', name: 'spring-data-cosmosdb', version: '2.0.3'
 	
+    compile 'com.microsoft.azure.eventgrid-2018-01-01:azure-mgmt-eventgrid:1.0.0-beta-1'
 		// https://mvnrepository.com/artifact/com.microsoft.azure/azure-documentdb-spring-boot-starter
 	compile group: 'com.microsoft.azure', name: 'azure-documentdb-spring-boot-starter', version: '2.0.5'
 	// https://mvnrepository.com/artifact/com.microsoft.azure/azure-servicebus-spring-boot-starter
