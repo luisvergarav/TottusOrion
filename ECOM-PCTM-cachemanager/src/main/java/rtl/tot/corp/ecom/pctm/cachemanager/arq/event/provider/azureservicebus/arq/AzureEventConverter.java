@@ -19,7 +19,7 @@ public class AzureEventConverter implements EventConverter<IMessage> {
         Assert.notNull(event, "event must not be null");
 
         final Message message =
-                new Message(event.getEventId(), event.getMetadata(), event.getMimeType());
+                new Message(event.getEventId(), event.toString(), event.getMimeType());
         message.setProperties(event.asMap());
 
         return message;

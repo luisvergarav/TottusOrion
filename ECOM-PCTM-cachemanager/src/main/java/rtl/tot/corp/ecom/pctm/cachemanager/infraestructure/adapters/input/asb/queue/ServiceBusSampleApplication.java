@@ -1,5 +1,6 @@
 package rtl.tot.corp.ecom.pctm.cachemanager.infraestructure.adapters.input.asb.queue;
 import com.microsoft.azure.servicebus.*;
+import com.microsoft.azure.servicebus.primitives.ConnectionStringBuilder;
 import com.microsoft.azure.servicebus.primitives.ServiceBusException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -10,28 +11,41 @@ import java.nio.charset.StandardCharsets;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 
-@SpringBootApplication
-public class ServiceBusSampleApplication  {
+public class ServiceBusSampleApplication {
 
- 
-    @Autowired
     private SubscriptionClient subscriptionClient;
 
-  
+    public static void main(String[] args) {
+    	ServiceBusSampleApplication app = new ServiceBusSampleApplication();
+    	try {
+			app.run();
+		} catch (ServiceBusException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
 
-    public ServiceBusSampleApplication(
-    		final SubscriptionClient subscriptionClient) throws ServiceBusException, InterruptedException{
- 
+    public void run() throws ServiceBusException, InterruptedException {
+        
+    	 final String subscription = new StringBuffer("tot-corp-orion-productchanges-topic-out")
+                 .append("/subscriptions/")
+                 .append("TOT-CORP-ORION-ProductChanges-Subs-Topic-OUT")
+                 .toString();
+         subscriptionClient =
+                 new SubscriptionClient(new ConnectionStringBuilder("Endpoint=sb://tot-corp-orion-int-qa.servicebus.windows.net/;SharedAccessKeyName=tottusorionadm;SharedAccessKey=k/F2r91goDjVRh+9A9/xvPTZ+X8ZbPXY1vFJPz0eyN8=;EntityPath=tot-corp-orion-productchanges-topic-out", 
+                		 subscription), ReceiveMode.PEEKLOCK);
+     
         receiveSubscriptionMessage();
     }
 
-  
 
     private void receiveSubscriptionMessage() throws ServiceBusException, InterruptedException {
         subscriptionClient.registerMessageHandler(new MessageHandler(), new MessageHandlerOptions());
 
         TimeUnit.SECONDS.sleep(5);
-        subscriptionClient.close();
     }
 
     static class MessageHandler implements IMessageHandler {

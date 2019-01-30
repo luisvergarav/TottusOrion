@@ -55,7 +55,23 @@ public class ASBToCosmosDBEventHandler implements EventHandler {
 			ProductCreateNotifiedEvent integrationEvent = new ProductCreateNotifiedEvent();
 		        
 		    integrationEvent.setSku(event.getEntityId());
-		        
+		    integrationEvent.setBrand(product.getBrand());
+		    integrationEvent.setCodeSUNAT(product.getCodeSUNAT());
+		    integrationEvent.setCodeSupplier(product.getCodeSupplier());
+		    integrationEvent.setDescription(product.getDescription());
+		    integrationEvent.setEan(product.getEan());
+		    integrationEvent.setFlejeDescription(product.getFlejeDescription());
+		    integrationEvent.setLevelId(product.getLevelId());
+		    integrationEvent.setModel(product.getModel());
+		    integrationEvent.setNameCasePack(product.getNameCasePack());
+		    integrationEvent.setNameSupplier(product.getNameSupplier());
+		    integrationEvent.setPosDescription(product.getPosDescription());
+		    integrationEvent.setProductType(product.getProductType());
+		    integrationEvent.setQtyCasePack(product.getQtyCasePack());
+		    integrationEvent.setSaleUnit(product.getSaleUnit());
+		    integrationEvent.setStatus(product.getStatus());
+		    integrationEvent.setUnitMeasure(product.getUnitMeasure());
+		    
 		    publisher.publish(EventType.PRODUCT_CREATED, integrationEvent);
 			log.info("Published " + event.getMetadata());
 			
