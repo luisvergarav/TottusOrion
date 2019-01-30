@@ -1,4 +1,4 @@
-package rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.azure.config;
+package rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.asb.config;
 import com.microsoft.azure.servicebus.ReceiveMode;
 
 import javax.validation.constraints.NotEmpty;

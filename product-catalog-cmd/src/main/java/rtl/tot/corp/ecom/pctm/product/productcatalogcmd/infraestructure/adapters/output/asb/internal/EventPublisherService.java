@@ -1,4 +1,4 @@
-package rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.eda.integration;
+package rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.output.asb.internal;
 
 import corp.falabella.arq.event.Event;
 import corp.falabella.arq.event.EventBuilder;

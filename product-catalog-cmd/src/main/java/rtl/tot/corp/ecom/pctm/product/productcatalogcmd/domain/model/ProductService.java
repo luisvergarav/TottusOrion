@@ -19,13 +19,12 @@ public ProductService(ProductRepository repository) {
 public boolean addProduct(ProductAggregate productAgg){
 	
 	Product product = new Product();
-	product.setSku(productAgg.productRootentity.getProductId());
+	product.setSku(productAgg.productRootentity.getSku());
 	
 	this.repository.save(product);
 	log.info("Product Saved successful ", product);
 	return true;
-	
-	
+		
 }
 
 }

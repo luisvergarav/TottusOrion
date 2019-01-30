@@ -1,35 +1,38 @@
 package rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.model;
 
+
 public class ProductAggregate {
 
 	final ProductRootEntity  productRootentity;
 	
 	public ProductAggregate(Builder builder) {
-		this.productRootentity = new ProductRootEntity(builder.productId,
-				builder.skuDescription,
+		this.productRootentity = new ProductRootEntity(
+				builder.sku,
+				builder.description,
 				builder.levelId,
-				builder.tradeMark,
+				builder.brand,
 				builder.model,
 				builder.productType,
-				builder.state,
+				builder.status,
 				builder.ean,
+				builder.unitMeasure,
 				builder.saleUnit,
-				builder.skuPosDescription,
-				builder.skuFlejeDescription,
-				builder.providerId,
-				builder.provider,
-				builder.skuCode,
-				builder.skuCodeDescription,
-				builder.subClass,
-				builder.subClassDescription,
-				builder.clazz,
-				builder.classDescription,
-				builder.subDepartment,
-				builder.subDepartmentDescription,
-				builder.department,
-				builder.departDescription,
-				builder.division,
-				builder.divisionDesc);
+				builder.posDescription,
+				builder.flejeDescription,
+				builder.codeSupplier,
+				builder.nameSupplier,
+				builder.qtyCasePack,
+				builder.nameCasePack,
+				builder.codeSUNAT,
+				builder.eanSecundary,
+				builder.hierarchy,
+				builder.logisticAttributes,
+				builder.conservation,
+				builder.assortment,
+				builder.attribute
+				
+				
+				);
 		
 	}
 	
@@ -42,138 +45,175 @@ public class ProductAggregate {
 	}
 	
 	public static class Builder{
-		private String productId;
-		private String skuDescription;
-		private Long levelId;
-		private String tradeMark;
-		private String model;
-		private String productType;
-		private String state;
-		private Long ean;
-		private String saleUnit;
-		private String skuPosDescription;
-		private String skuFlejeDescription;
-		private Long providerId;
-		private String provider;
-		private String skuCode;
-		private String skuCodeDescription;
-		private String subClass;
-		private String subClassDescription;
-		private String clazz;
-		private String classDescription;
-		private String subDepartment;
-		private String subDepartmentDescription;
-		private String department;
-		private String departDescription;
-		private String division;
-		private String divisionDesc;
+		
+		String sku;
+		
+		String description;
+		
+		Long levelId;
+		
+		String brand;
+		
+		String model;
+		
+		String productType;
+		
+		String status;
+		
+		Long ean;
+		
+		String unitMeasure;
+		
+		String saleUnit;
+		
+		String posDescription;
+		
+		String flejeDescription;
+		
+		Integer codeSupplier;
+		
+		String nameSupplier;
+		
+		String qtyCasePack;
+		
+		String nameCasePack;
+		
+		String codeSUNAT;
+		
+		EanSecundary eanSecundary = new EanSecundary();
+		
+		Hierarchy hierarchy = new Hierarchy();
+		
+		LogisticAttributes logisticAttributes = new LogisticAttributes();
+		
+		Conservation conservation = new Conservation();
+		
+		Assortment assortment = new Assortment();
+		
+		Attribute attribute = new Attribute();
 		
 		public ProductAggregate build() {
 			
 			return new ProductAggregate(this);
 		}
-		public Builder productId(String productId) {
-			this.productId = productId;
+		public Builder sku(String sku) {
+			this.sku = sku;
 			return this;
 		}
-		public Builder skuDescription(String skuDescription) {
-			this.skuDescription = skuDescription;
+
+		
+		public Builder setDescription(String description) {
+			this.description = description;
 			return this;
 		}
-		public Builder levelId(Long levelId) {
+		
+		public Builder setLevelId(Long levelId) {
 			this.levelId = levelId;
 			return this;
 		}
-		public Builder tradeMark(String tradeMark) {
-			this.tradeMark = tradeMark;
+		
+		public Builder setBrand(String brand) {
+			this.brand = brand;
 			return this;
 		}
-		public Builder model(String model) {
+		
+		public Builder setModel(String model) {
 			this.model = model;
 			return this;
 		}
-		public Builder productType(String productType) {
+		
+		public Builder setProductType(String productType) {
 			this.productType = productType;
 			return this;
 		}
-		public Builder state(String state) {
-			this.state = state;
+		
+		public Builder setStatus(String status) {
+			this.status = status;
 			return this;
 		}
-		public Builder ean(Long ean) {
+		
+		public Builder setEan(Long ean) {
 			this.ean = ean;
 			return this;
 		}
-		public Builder saleUnit(String saleUnit) {
+		
+		public Builder setUnitMeasure(String unitMeasure) {
+			this.unitMeasure = unitMeasure;
+			return this;
+		}
+		
+		public Builder setSaleUnit(String saleUnit) {
 			this.saleUnit = saleUnit;
 			return this;
 		}
-		public Builder skuPosDescription(String skudPosDescription) {
-			this.skuPosDescription = skudPosDescription;
-			return this;
-		}
-		public Builder skuFlejeDescription(String skuFlejeDescription) {
-			this.skuFlejeDescription = skuFlejeDescription;
-			return this;
-		}
-		public Builder providerId(Long providerId) {
-			this.providerId = providerId;
-			return this;
-		}
-		public Builder provider(String provider) {
-			this.provider = provider;
-			return this;
-		}
-		public Builder skuCode(String skuCode) {
-			this.skuCode = skuCode;
-			return this;
-		}
-		public Builder skuCodeDescription(String skuCodeDescription) {
-			this.skuCodeDescription = skuCodeDescription;
-			return this;
-		}
-		public Builder subClass(String subClass) {
-			this.subClass = subClass;
-			return this;
-		}
-		public Builder subClassDescription(String subClassDescription) {
-			this.subClassDescription = subClassDescription;
-			return this;
-		}
-		public Builder clazz(String clazz) {
-			this.clazz = clazz;
-			return this;
-		}
-		public Builder classDescription(String classDescription) {
-			this.classDescription = classDescription;
-			return this;
-		}
-		public Builder subDepartment(String subDepartment) {
-			this.subDepartment = subDepartment;
-			return this;
-		}
-		public Builder subDepartmentDescription(String subDepartmentDescription) {
-			this.subDepartmentDescription = subDepartmentDescription;
-			return this;
-		}
-		public Builder department(String department) {
-			this.department = department;
-			return this;
-		}
-		public Builder departDescription(String departDescription) {
-			this.departDescription = departDescription;
-			return this;
-		}
-		public Builder division(String division) {
-			this.division = division;
-			return this;
-		}
-		public Builder divisionDesc(String divisionDesc) {
-			this.divisionDesc = divisionDesc;
+		
+		public Builder setPosDescription(String posDescription) {
+			this.posDescription = posDescription;
 			return this;
 		}
 		
+		public Builder setFlejeDescription(String flejeDescription) {
+			this.flejeDescription = flejeDescription;
+			return this;
+		}
 		
+		public Builder setCodeSupplier(Integer codeSupplier) {
+			this.codeSupplier = codeSupplier;
+			return this;
+		}
+		
+		public Builder setNameSupplier(String nameSupplier) {
+			this.nameSupplier = nameSupplier;
+			return this;
+		}
+		
+		public Builder setQtyCasePack(String qtyCasePack) {
+			this.qtyCasePack = qtyCasePack;
+			return this;
+		}
+		
+		public Builder setNameCasePack(String nameCasePack) {
+			this.nameCasePack = nameCasePack;
+			return this;
+		}
+		
+		public Builder setCodeSUNAT(String codeSUNAT) {
+			this.codeSUNAT = codeSUNAT;
+			return this;
+		}
+		
+		public Builder setEanSecundary(EanSecundary eanSecundary) {
+			this.eanSecundary = eanSecundary;
+			return this;
+		}
+		
+		public Builder setHierarchy(Hierarchy hierarchy) {
+			this.hierarchy = hierarchy;
+			return this;
+		}
+		
+		public Builder setLogisticAttributes(LogisticAttributes logisticAttributes) {
+			this.logisticAttributes = logisticAttributes;
+			return this;
+		}
+		
+		public Builder setConservation(Conservation conservation) {
+			this.conservation = conservation;
+			return this;
+		}
+		
+		public Builder setAssortment(Assortment assortment) {
+			this.assortment = assortment;
+			return this;
+		}
+		
+		public Builder setAttribute(Attribute attribute) {
+			this.attribute = attribute;
+			return this;
+		}
+
+
+
 		
 	}
 }

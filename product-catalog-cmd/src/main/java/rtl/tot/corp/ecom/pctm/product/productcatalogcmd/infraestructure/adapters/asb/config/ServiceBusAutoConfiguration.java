@@ -1,4 +1,4 @@
-package rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.azure.config;
+package rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.asb.config;
 import com.microsoft.azure.servicebus.QueueClient;
 import com.microsoft.azure.servicebus.SubscriptionClient;
 import com.microsoft.azure.servicebus.TopicClient;
@@ -29,15 +29,15 @@ public class ServiceBusAutoConfiguration {
         this.properties = properties;
         this.telemetryProxy = new TelemetryProxy(properties.isAllowTelemetry());
     }
-
-    @Bean
-    @Primary
-    @ConditionalOnProperty(prefix = "azure.servicebus", value = {"queue-name", "queue-receive-mode"})
-    public QueueClient queueClient() throws InterruptedException, ServiceBusException {
-        trackCustomEvent();
-        return new QueueClient(new ConnectionStringBuilder(properties.getConnectionString(),
-                properties.getQueueName()), properties.getQueueReceiveMode());
-    }
+//
+//    @Bean
+//    @Primary
+//    @ConditionalOnProperty(prefix = "azure.servicebus", value = {"queue-name", "queue-receive-mode"})
+//    public QueueClient queueClient() throws InterruptedException, ServiceBusException {
+//        trackCustomEvent();
+//        return new QueueClient(new ConnectionStringBuilder(properties.getConnectionString(),
+//                properties.getQueueName()), properties.getQueueReceiveMode());
+//    }
 
 //    @Bean
 //    @ConditionalOnMissingBean

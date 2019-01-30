@@ -15,7 +15,7 @@ import lombok.extern.slf4j.Slf4j;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.CreateProductCommandBus;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.CreateProductCommandImpl;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.DecoratorCreateProductCommandBus;
-import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.ports.CreateProductCommand;
+import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.ports.CreateProductCommand;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.http.rest.constants.RestConstants;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.http.rest.domain.APIResponse;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.http.rest.domain.Product;

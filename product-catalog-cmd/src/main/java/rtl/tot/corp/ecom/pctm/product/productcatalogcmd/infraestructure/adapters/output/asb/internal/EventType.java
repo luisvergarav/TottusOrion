@@ -1,4 +1,4 @@
-package rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.eda.integration;
+package rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.output.asb.internal;
 
 public enum EventType {
     PRODUCT_CREATED("productCreated"),
