@@ -21,14 +21,14 @@ import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.http.rest.domain.Product;
 
 @RestController
-@Api(value = "ORION", description = "ORION Prouct API")
+@Api(value = "ORION", description = "ORION Prouct Management API")
 @Slf4j
 public class ProductController {
 
 	@Autowired
 	DecoratorCreateProductCommandBus cmdBus;
 
-	@RequestMapping(path = "/ECOM/PCTM/v1.0/product", method = POST)
+	@RequestMapping(path = "/MREX/PRMG/v1.0/PRODUCT", method = POST)
 	@ApiOperation(value = "Add Product", response = APIResponse.class)
 	public ResponseEntity<APIResponse> createProduct(@RequestBody Product request) {
 
@@ -58,7 +58,7 @@ public class ProductController {
 			return new ResponseEntity<APIResponse>(this.buildErrorRes(e.getLocalizedMessage()), HttpStatus.BAD_REQUEST);
 		}
 
-		return new ResponseEntity<APIResponse>(this.buildSuccessRes(), HttpStatus.OK);
+		return new ResponseEntity<APIResponse>(this.buildSuccessRes("Product Created"), HttpStatus.OK);
 	}
 
 	/**
@@ -67,10 +67,11 @@ public class ProductController {
 	 * @return
 	 */
 
-	private APIResponse buildSuccessRes() {
+	private APIResponse buildSuccessRes(String msg) {
 		APIResponse res = new APIResponse();
 		res.setCode(RestConstants.SUCCESS_CODE);
 		res.setType(RestConstants.SUCCESS_RESPONSE);
+		res.setMessage(msg);
 		return res;
 	}
 

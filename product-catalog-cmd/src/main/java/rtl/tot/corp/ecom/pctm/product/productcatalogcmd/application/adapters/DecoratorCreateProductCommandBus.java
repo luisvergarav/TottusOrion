@@ -105,6 +105,7 @@ public class DecoratorCreateProductCommandBus implements CommandBus<CreateProduc
     				integrationEvent.getLogisticAttributes().setHigh(command.getLogisticAttributes().getHigh());
     				integrationEvent.getLogisticAttributes().setHighCasePack(command.getLogisticAttributes().getHighCasePack());
     				integrationEvent.getLogisticAttributes().setLength(command.getLogisticAttributes().getLength());
+    				integrationEvent.getLogisticAttributes().setLengthCasePack(command.getLogisticAttributes().getLengthCasePack());
     				integrationEvent.getLogisticAttributes().setPalletHi(command.getLogisticAttributes().getPalletHi());
     				integrationEvent.getLogisticAttributes().setPalletTier(command.getLogisticAttributes().getPalletTier());
     				integrationEvent.getLogisticAttributes().setUnitMeasure(command.getLogisticAttributes().getUnitMeasure());

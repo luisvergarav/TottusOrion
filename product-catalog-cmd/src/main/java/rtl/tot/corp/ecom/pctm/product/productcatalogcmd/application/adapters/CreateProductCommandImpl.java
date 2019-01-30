@@ -138,6 +138,7 @@ public class CreateProductCommandImpl implements CreateProductCommand<Product> {
 			this.logisticAttributes.setHigh(request.getLogisticAttributes().getHigh());
 			this.logisticAttributes.setHighCasePack(request.getLogisticAttributes().getHighCasePack());
 			this.logisticAttributes.setLength(request.getLogisticAttributes().getLength());
+			this.logisticAttributes.setLengthCasePack(request.getLogisticAttributes().getLengthCasePack());
 			this.logisticAttributes.setPalletHi(request.getLogisticAttributes().getPalletHi());
 			this.logisticAttributes.setPalletTier(request.getLogisticAttributes().getPalletTier());
 			this.logisticAttributes.setUnitMeasure(request.getLogisticAttributes().getUnitMeasure());
