@@ -10,6 +10,12 @@ import org.springframework.data.annotation.Id;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import lombok.Data;
+import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.Assortment;
+import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.Attribute;
+import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.Conservation;
+import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.EanSecundary;
+import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.Hierarchy;
+import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.LogisticAttributes;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.ports.CreateProductCommand;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.http.rest.domain.Product;
 

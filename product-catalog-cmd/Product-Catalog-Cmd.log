@@ -36,3 +36,7 @@
 2019-01-30 12:13:44 INFO - Starting ProtocolHandler ["http-nio-8082"] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
 2019-01-30 12:13:44 INFO - Tomcat started on port(s): 8082 (http) with context path '' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
 2019-01-30 12:13:44 INFO - Started ProductCatalogCmdApplication in 25.855 seconds (JVM running for 27.514) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-01-30 12:30:49 INFO - Application shutdown requested. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-01-30 12:30:49 INFO - Closing DocumentClient - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-01-30 12:30:49 WARN - Preferred location background task was interrupted - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-01-30 12:30:49 INFO - Shutting down ExecutorService 'applicationTaskExecutor' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 

@@ -70,3 +70,9 @@
 2019-01-30 12:26:40 WARN - No messages received from 'tot-corp-orion-productchanges-topic-mid/subscriptions/TOT-CORP-ORION-ProductChanges-Subs-Topic-MID'. Pending receive request timed out. Returning null to the client. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
 2019-01-30 12:27:40 WARN - No messages received from 'tot-corp-orion-productchanges-topic-mid/subscriptions/TOT-CORP-ORION-ProductChanges-Subs-Topic-MID'. Pending receive request timed out. Returning null to the client. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
 2019-01-30 12:28:40 WARN - No messages received from 'tot-corp-orion-productchanges-topic-mid/subscriptions/TOT-CORP-ORION-ProductChanges-Subs-Topic-MID'. Pending receive request timed out. Returning null to the client. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-01-30 12:29:40 WARN - No messages received from 'tot-corp-orion-productchanges-topic-mid/subscriptions/TOT-CORP-ORION-ProductChanges-Subs-Topic-MID'. Pending receive request timed out. Returning null to the client. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-01-30 12:30:40 WARN - No messages received from 'tot-corp-orion-productchanges-topic-mid/subscriptions/TOT-CORP-ORION-ProductChanges-Subs-Topic-MID'. Pending receive request timed out. Returning null to the client. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-01-30 12:30:46 INFO - Application shutdown requested. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-01-30 12:30:46 INFO - Closing DocumentClient - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-01-30 12:30:46 WARN - Preferred location background task was interrupted - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-01-30 12:30:46 INFO - Shutting down ExecutorService 'applicationTaskExecutor' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 

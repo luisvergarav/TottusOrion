@@ -54,7 +54,7 @@ public class DecoratorCreateProductCommandBus implements CommandBus<CreateProduc
     			if (command.getAssortment() != null) {
     				integrationEvent.getAssortment().setStore(command.getAssortment().getStore());
     			}
-    			for(rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.Attribute a: 
+    			for(rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.Attribute a: 
     				command.getAttribute()) {
     				Attribute attribute = new Attribute();
     				
@@ -73,7 +73,7 @@ public class DecoratorCreateProductCommandBus implements CommandBus<CreateProduc
     				integrationEvent.getConservation().setTypeSanitaryRegistration(command.getConservation().getTypeSanitaryRegistration());
     			}
     			
-    			for ( rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.EanSecundary e : 
+    			for ( rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.EanSecundary e : 
     				command.getEanSecundary()) {
     				EanSecundary eanSecondary = new EanSecundary();
     				eanSecondary.setEanSecundary(e.getEanSecundary());
