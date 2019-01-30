@@ -8,7 +8,7 @@
     </appender>
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>CacheManager.log</file>
+        <file>Product-Catalog-Cmd.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- daily rollover -->
             <fileNamePattern>Product-Catalog-Cmd-%d{yyyy-MM-dd}.%i.log</fileNamePattern>

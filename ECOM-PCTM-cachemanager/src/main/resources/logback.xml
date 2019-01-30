@@ -8,10 +8,10 @@
     </appender>
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>Product-Catalog-Cmd.log</file>
+        <file>ECOM-PCTM-cachemanager.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- daily rollover -->
-            <fileNamePattern>Product-Catalog-Cmd-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>ECOM-PCTM-cachemanager-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <maxFileSize>16MB</maxFileSize>
             </timeBasedFileNamingAndTriggeringPolicy>
