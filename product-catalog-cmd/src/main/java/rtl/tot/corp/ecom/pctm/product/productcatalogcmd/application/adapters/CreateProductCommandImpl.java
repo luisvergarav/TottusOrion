@@ -93,12 +93,14 @@ public class CreateProductCommandImpl implements CreateProductCommand<Product> {
 		if (request.getAssortment() != null) {
 			this.assortment.setStore(request.getAssortment().getStore());
 		}
-		for (rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.http.rest.domain.Attribute 
-				a: request.getAttribute()) {
-			Attribute attribute = new Attribute();
-			attribute.setNameAttribute(a.getNameAttribute());
-			attribute.setValue(a.getValue());
-			this.attribute.add(attribute);
+		if (request.getAttribute() != null){
+			for (rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.http.rest.domain.Attribute 
+					a: request.getAttribute()) {
+				Attribute attribute = new Attribute();
+				attribute.setNameAttribute(a.getNameAttribute());
+				attribute.setValue(a.getValue());
+				this.attribute.add(attribute);
+			}
 		}
 		
 		if (request.getConservation() != null) {
@@ -111,11 +113,13 @@ public class CreateProductCommandImpl implements CreateProductCommand<Product> {
 			this.conservation.setTypeSanitaryRegistration(request.getConservation().getTypeSanitaryRegistration());
 		}
 		
-		 for(rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.http.rest.domain.EanSecundary 
-				e :request.getEanSecundary()) {
-			 EanSecundary eanSecundary = new EanSecundary();
-			 eanSecundary.setEanSecundary(e.getEanSecundary());
-			 this.eanSecundary.add(eanSecundary);
+		if (request.getEanSecundary() != null) {
+			 for(rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.http.rest.domain.EanSecundary 
+					e :request.getEanSecundary()) {
+				 EanSecundary eanSecundary = new EanSecundary();
+				 eanSecundary.setEanSecundary(e.getEanSecundary());
+				 this.eanSecundary.add(eanSecundary);
+			}
 		}
 		
 		if (request.getHierarchy() != null) {

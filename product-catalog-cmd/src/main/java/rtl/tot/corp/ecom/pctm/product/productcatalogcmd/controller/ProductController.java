@@ -23,11 +23,21 @@ import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.http.rest.domain.APIResponse;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.http.rest.domain.Product;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.http.rest.domain.UpdateProduct;
+import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.output.asb.internal.EventProperties;
+
+import javax.servlet.http.HttpServletRequest;
+
 
 @RestController
 @Api(value = "ORION", description = "ORION Prouct Management API")
 @Slf4j
 public class ProductController {
+
+	@Autowired
+	private EventProperties eventProperties;
+	
+	@Autowired
+	private HttpServletRequest context;
 
 	@Autowired
 	DecoratorCreateProductCommandBus cmdBus;
@@ -40,6 +50,14 @@ public class ProductController {
 	@ApiOperation(value = "Add Product", response = APIResponse.class)
 	public ResponseEntity<APIResponse> createProduct(@RequestBody Product request) {
 
+		log.info(context.getHeader("Country") +  context.getHeader("Commerce") + context.getHeader("Channel"));
+	
+		eventProperties.setChannel(context.getHeader("Country") );
+		eventProperties.setCommerce(context.getHeader("Commerce") );
+		eventProperties.setCountry(context.getHeader("Country") );
+		eventProperties.setMimeType(context.getHeader("Content-Type") );
+		eventProperties.setVersion("1.0");
+		
 		// E2EContext e2e = new E2EContext();
 		// try {
 		// e2e.setE2EContext(headers);
@@ -73,7 +91,7 @@ public class ProductController {
 	@ApiOperation(value = "Update a Product", response = APIResponse.class)
 	public ResponseEntity<APIResponse> updateProduct(@RequestBody UpdateProduct request) {
 
-		// E2EContext e2e = new E2EContext();
+		//E2EContext e2e = new E2EContext();
 		// try {
 		// e2e.setE2EContext(headers);
 		// } catch (E2EHelperNotFoundException e) {
@@ -91,7 +109,7 @@ public class ProductController {
 				log.info("Product Updated successful ", request.getSku());
 			else{
 				log.info("Product not Updated ", request.getSku());
-				return new ResponseEntity<APIResponse>(this.buildErrorRes("Product not Created"), HttpStatus.BAD_REQUEST);
+				return new ResponseEntity<APIResponse>(this.buildErrorRes("Product not updated"), HttpStatus.BAD_REQUEST);
 			}
 		} catch (Exception e) {
 

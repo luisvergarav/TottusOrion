@@ -61,9 +61,11 @@ dependencies {
   		implementation('org.springframework.boot:spring-boot-starter-web')
 	implementation('org.springframework.boot:spring-boot-starter-actuator')
 	implementation('org.springframework.boot:spring-boot-starter-data-rest')
+	compile "corp.falabella.event:event-adapter-azureservicebus-support:${eventAdapterASBVersion}"
 	
-	  compile "corp.falabella.event:event-adapter-azureservicebus-support:${eventAdapterASBVersion}"
-	
+	//Splunk libs
+	compile name: 'corp-common-e2e-core'
+	compile name: 'corp-common-e2e-httpImpl'
 	
    	compileOnly("org.projectlombok:lombok:1.16.10")
    	// https://mvnrepository.com/artifact/com.microsoft.azure/azure-servicebus-spring-boot-starter
