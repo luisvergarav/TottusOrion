@@ -25,4 +25,16 @@ public class ProductServiceApplicationImpl {
 
 	}
 
+	
+public boolean updateProduct(UpdateProductCommandImpl cmd) {
+		
+		aggregate = new  ProductAggregate.Builder()
+				.sku(cmd.getSku())
+				.build();
+		if (this.aggregate.updateProduct(service))
+			return true;
+		else
+			return false;
+
+	}
 }

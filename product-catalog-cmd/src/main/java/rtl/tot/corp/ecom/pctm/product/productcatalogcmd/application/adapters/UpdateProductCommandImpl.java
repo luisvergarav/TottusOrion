@@ -17,10 +17,10 @@ import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.mod
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.Hierarchy;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.LogisticAttributes;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.ports.CreateProductCommand;
-import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.http.rest.domain.Product;
+import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.http.rest.domain.UpdateProduct;
 
 @Data
-public class CreateProductCommandImpl implements CreateProductCommand<Product> {
+public class UpdateProductCommandImpl implements CreateProductCommand<UpdateProduct> {
 	
 	@Id
 	@NotNull
@@ -71,7 +71,7 @@ public class CreateProductCommandImpl implements CreateProductCommand<Product> {
 	List<Attribute> attribute = new ArrayList<Attribute>();
 
 
-	public CreateProductCommandImpl(Product request) {
+	public UpdateProductCommandImpl(UpdateProduct request) {
 		super();
 		this.brand = request.getBrand();
 		this.codeSUNAT = request.getCodeSUNAT();
@@ -93,14 +93,12 @@ public class CreateProductCommandImpl implements CreateProductCommand<Product> {
 		if (request.getAssortment() != null) {
 			this.assortment.setStore(request.getAssortment().getStore());
 		}
-		if (request.getAttribute() != null){
-			for (rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.http.rest.domain.Attribute 
-					a: request.getAttribute()) {
-				Attribute attribute = new Attribute();
-				attribute.setNameAttribute(a.getNameAttribute());
-				attribute.setValue(a.getValue());
-				this.attribute.add(attribute);
-			}
+		for (rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.http.rest.domain.Attribute 
+				a: request.getAttribute()) {
+			Attribute attribute = new Attribute();
+			attribute.setNameAttribute(a.getNameAttribute());
+			attribute.setValue(a.getValue());
+			this.attribute.add(attribute);
 		}
 		
 		if (request.getConservation() != null) {
@@ -113,13 +111,11 @@ public class CreateProductCommandImpl implements CreateProductCommand<Product> {
 			this.conservation.setTypeSanitaryRegistration(request.getConservation().getTypeSanitaryRegistration());
 		}
 		
-		if (request.getEanSecundary() != null) {
-			 for(rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.http.rest.domain.EanSecundary 
-					e :request.getEanSecundary()) {
-				 EanSecundary eanSecundary = new EanSecundary();
-				 eanSecundary.setEanSecundary(e.getEanSecundary());
-				 this.eanSecundary.add(eanSecundary);
-			}
+		 for(rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.http.rest.domain.EanSecundary 
+				e :request.getEanSecundary()) {
+			 EanSecundary eanSecundary = new EanSecundary();
+			 eanSecundary.setEanSecundary(e.getEanSecundary());
+			 this.eanSecundary.add(eanSecundary);
 		}
 		
 		if (request.getHierarchy() != null) {
