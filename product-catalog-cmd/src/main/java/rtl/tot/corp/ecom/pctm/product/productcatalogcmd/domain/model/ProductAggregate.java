@@ -44,6 +44,11 @@ public class ProductAggregate {
 		return service.addProduct(this);
 	}
 	
+	
+	public boolean updateProduct(ProductService service) {
+		return service.addProduct(this);
+	}
+	
 	public static class Builder{
 		
 		String sku;

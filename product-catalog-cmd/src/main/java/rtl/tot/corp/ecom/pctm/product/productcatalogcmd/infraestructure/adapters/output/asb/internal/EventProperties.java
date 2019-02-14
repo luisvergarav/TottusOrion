@@ -1,12 +1,10 @@
 package rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.output.asb.internal;
 
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-@EnableConfigurationProperties
-@ConfigurationProperties(prefix = "event-properties")
+//@EnableConfigurationProperties
+//@ConfigurationProperties(prefix = "event-properties")
 public class EventProperties {
 
     private String channel;
