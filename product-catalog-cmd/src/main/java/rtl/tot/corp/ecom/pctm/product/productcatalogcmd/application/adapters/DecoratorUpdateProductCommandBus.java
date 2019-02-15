@@ -55,15 +55,16 @@ public class DecoratorUpdateProductCommandBus implements CommandBus<UpdateProduc
     			if (command.getAssortment() != null) {
     				integrationEvent.getAssortment().setStore(command.getAssortment().getStore());
     			}
-    			for(rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.Attribute a: 
-    				command.getAttribute()) {
-    				Attribute attribute = new Attribute();
-    				
-    				attribute.setNameAttribute(a.getNameAttribute());
-    				attribute.setValue(a.getValue());
-    				integrationEvent.getAttribute().add(attribute);
+    			if (command.getAttribute() != null) {
+	    			for(rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.Attribute a: 
+	    				command.getAttribute()) {
+	    				Attribute attribute = new Attribute();
+	    				
+	    				attribute.setNameAttribute(a.getNameAttribute());
+	    				attribute.setValue(a.getValue());
+	    				integrationEvent.getAttribute().add(attribute);
+	    			}
     			}
-    			
     			if (command.getConservation() != null) {
     				integrationEvent.getConservation().setConservation(command.getConservation().getConservation());
     				integrationEvent.getConservation().setEndDateSanitaryRegistration(command.getConservation().getEndDateSanitaryRegistration());
@@ -74,13 +75,14 @@ public class DecoratorUpdateProductCommandBus implements CommandBus<UpdateProduc
     				integrationEvent.getConservation().setTypeSanitaryRegistration(command.getConservation().getTypeSanitaryRegistration());
     			}
     			
-    			for ( rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.EanSecundary e : 
-    				command.getEanSecundary()) {
-    				EanSecundary eanSecondary = new EanSecundary();
-    				eanSecondary.setEanSecundary(e.getEanSecundary());
-    				integrationEvent.getEanSecundary().add(eanSecondary);
+    			if(command.getEanSecundary() != null) {
+	    			for ( rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.EanSecundary e : 
+	    				command.getEanSecundary()) {
+	    				EanSecundary eanSecondary = new EanSecundary();
+	    				eanSecondary.setEanSecundary(e.getEanSecundary());
+	    				integrationEvent.getEanSecundary().add(eanSecondary);
+	    			}
     			}
-    			
     			if (command.getHierarchy() != null) {
     				integrationEvent.getHierarchy().setClassLevel(command.getHierarchy().getClassLevel());
     				integrationEvent.getHierarchy().setClassName(command.getHierarchy().getClassName());
