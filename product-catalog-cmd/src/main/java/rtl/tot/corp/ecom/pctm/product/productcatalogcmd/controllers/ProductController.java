@@ -94,6 +94,15 @@ public class ProductController {
 	@ApiOperation(value = "Update a Product", response = APIResponse.class)
 	public ResponseEntity<APIResponse> updateProduct(@RequestBody UpdateProduct request) {
 
+		log.info(context.getHeader("Country") +  context.getHeader("Commerce") + context.getHeader("Channel"));
+		
+		eventProperties.setChannel(context.getHeader("Country") );
+		eventProperties.setCommerce(context.getHeader("Commerce") );
+		eventProperties.setCountry(context.getHeader("Country") );
+		eventProperties.setMimeType(context.getHeader("Content-Type") );
+		eventProperties.setVersion("1.0");
+		
+		
 		//E2EContext e2e = new E2EContext();
 		// try {
 		// e2e.setE2EContext(headers);

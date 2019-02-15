@@ -83,3 +83,8 @@ com.microsoft.azure.servicebus.primitives.ServiceBusException: Error{condition=p
 	at com.microsoft.azure.servicebus.primitives.MessagingFactory$RunReactor.run(MessagingFactory.java:481)
 	at java.lang.Thread.run(Thread.java:748)
 2019-02-15 09:32:21 WARN - Completing all pending requests with exception in request response link to $cbs - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-02-15 10:04:08 INFO - Update Product request. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-02-15 10:06:25 INFO - Product Saved successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-02-15 10:06:27 INFO - Sending ProductUpdatedEvent integration Event  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-02-15 10:06:47ERROR - productUpdated event could not be send. Cause: Invalid parameter for version: null - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-02-15 10:06:51 INFO - Product Updated successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
