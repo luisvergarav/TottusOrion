@@ -2,8 +2,6 @@ package rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters;
 
 
 import org.springframework.stereotype.Component;
-
-import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.ports.Command;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.ports.CommandBus;
 
 @Component
