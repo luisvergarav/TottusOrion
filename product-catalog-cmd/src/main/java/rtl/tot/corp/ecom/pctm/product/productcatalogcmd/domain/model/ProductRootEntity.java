@@ -1,5 +1,7 @@
 package rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.model;
 
+import java.util.List;
+
 import javax.validation.constraints.NotNull;
 
 import lombok.Data;
@@ -11,8 +13,8 @@ public class ProductRootEntity {
 	public ProductRootEntity(String sku, String description, Long levelId, String brand, String model,
 			String productType, String status, Long ean, String unitMeasure, String saleUnit, String posDescription,
 			String flejeDescription, Integer codeSupplier, String nameSupplier, String qtyCasePack, String nameCasePack,
-			String codeSUNAT, EanSecundary eanSecundary, Hierarchy hierarchy, LogisticAttributes logisticAttributes,
-			Conservation conservation, Assortment assortment, Attribute attribute) {
+			String codeSUNAT, List<EanSecundary> eanSecundary, Hierarchy hierarchy, LogisticAttributes logisticAttributes,
+			Conservation conservation, Assortment assortment, List<Attribute> attribute) {
 		super();
 		this.sku = sku;
 		this.description = description;
@@ -73,7 +75,7 @@ public class ProductRootEntity {
 	
 	String codeSUNAT;
 	
-	EanSecundary eanSecundary;
+	List<EanSecundary> eanSecundary;
 	
 	Hierarchy hierarchy;
 	
@@ -83,7 +85,7 @@ public class ProductRootEntity {
 	
 	Assortment assortment;
 	
-	Attribute attribute;
+	List<Attribute> attribute;
 	
 	
 	

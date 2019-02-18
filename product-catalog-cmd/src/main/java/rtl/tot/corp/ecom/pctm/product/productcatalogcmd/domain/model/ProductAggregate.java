@@ -1,5 +1,7 @@
 package rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.model;
 
+import java.util.ArrayList;
+import java.util.List;
 
 public class ProductAggregate {
 
@@ -85,7 +87,7 @@ public class ProductAggregate {
 		
 		String codeSUNAT;
 		
-		EanSecundary eanSecundary = new EanSecundary();
+		List <EanSecundary> eanSecundary = new ArrayList <EanSecundary>();
 		
 		Hierarchy hierarchy = new Hierarchy();
 		
@@ -95,7 +97,7 @@ public class ProductAggregate {
 		
 		Assortment assortment = new Assortment();
 		
-		Attribute attribute = new Attribute();
+		List <Attribute> attribute = new ArrayList<Attribute>();
 		
 		public ProductAggregate build() {
 			
@@ -187,7 +189,7 @@ public class ProductAggregate {
 			return this;
 		}
 		
-		public Builder setEanSecundary(EanSecundary eanSecundary) {
+		public Builder setEanSecundary(List<EanSecundary> eanSecundary) {
 			this.eanSecundary = eanSecundary;
 			return this;
 		}
@@ -212,7 +214,7 @@ public class ProductAggregate {
 			return this;
 		}
 		
-		public Builder setAttribute(Attribute attribute) {
+		public Builder setAttribute(List<Attribute> attribute) {
 			this.attribute = attribute;
 			return this;
 		}

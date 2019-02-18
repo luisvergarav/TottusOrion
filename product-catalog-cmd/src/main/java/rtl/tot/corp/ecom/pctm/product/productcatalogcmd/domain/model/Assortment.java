@@ -5,4 +5,11 @@ import lombok.Data;
 @Data
 public class Assortment {
 Integer store;
+
+public Assortment(Integer store) {
+	super();
+	this.store = store;
+}
+public Assortment() {
+}
 }

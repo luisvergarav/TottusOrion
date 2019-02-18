@@ -6,4 +6,12 @@ import lombok.Data;
 public class Attribute {
 String nameAttribute;
 String value;
+public Attribute(String nameAttribute, String value) {
+	super();
+	this.nameAttribute = nameAttribute;
+	this.value = value;
+}
+
+public Attribute() {
+}
 }
