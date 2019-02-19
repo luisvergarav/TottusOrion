@@ -215,3 +215,13 @@ com.microsoft.azure.servicebus.primitives.ServiceBusException: Error{condition=p
 2019-02-18 16:36:26 INFO - Sending ProductStateUpdatedEvent integration Event  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
 2019-02-18 16:36:26 INFO - Event published: {"sku":"20115591","status":"Activo"} - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
 2019-02-18 16:36:26 INFO - Product Updated successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-02-18 16:53:25 INFO - PETottusPMM - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-02-18 16:53:25 INFO - Update Product State request. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-02-18 16:53:25 INFO - Product Saved successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-02-18 16:53:25 INFO - Sending ProductStateUpdatedEvent integration Event  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-02-18 16:53:26 INFO - Event published: {"sku":"20115591","status":"Activo"} - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-02-18 16:53:26 INFO - Product Updated successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-02-18 16:54:15 INFO - Application shutdown requested. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-02-18 16:54:16 INFO - Closing DocumentClient - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-02-18 16:54:16 WARN - Preferred location background task was interrupted - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-02-18 16:54:16 INFO - Shutting down ExecutorService 'applicationTaskExecutor' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
