@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.model.Assortment;
-import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.model.Attribute;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.model.ProductAggregate;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.model.ProductService;
 
@@ -42,4 +41,16 @@ public boolean updateProduct(UpdateProductCommandImpl cmd) {
 			return false;
 
 	}
+
+public boolean stateUpdateProduct(StateUpdateProductCommandImpl cmd) {
+	
+	aggregate = new  ProductAggregate.Builder()
+			.sku(cmd.getSku())
+			.build();
+	if (this.aggregate.updateProduct(service))
+		return true;
+	else
+		return false;
+
+}
 }

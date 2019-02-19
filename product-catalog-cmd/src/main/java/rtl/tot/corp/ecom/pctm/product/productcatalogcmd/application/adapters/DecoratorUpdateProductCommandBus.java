@@ -6,9 +6,7 @@ import org.springframework.stereotype.Component;
 import lombok.extern.slf4j.Slf4j;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.events.Attribute;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.events.EanSecundary;
-import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.events.ProductCreatedIntegrationEvent;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.events.ProductUpdatedIntegrationEvent;
-import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.ports.Command;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.ports.CommandBus;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.output.asb.internal.EventPublisherService;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.output.asb.internal.EventType;@Component

@@ -3,7 +3,8 @@ package rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapter
 public enum EventType {
     PRODUCT_CREATED("productCreated"),
     PRODUCT_UPDATED("productUpdated"),
-    PRODUCT_DELETED("productDeleted");
+    PRODUCT_DELETED("productDeleted"),
+	PRODUCT_STATEUPDATED("productStateUpdated");
 
     private final String name;
 
