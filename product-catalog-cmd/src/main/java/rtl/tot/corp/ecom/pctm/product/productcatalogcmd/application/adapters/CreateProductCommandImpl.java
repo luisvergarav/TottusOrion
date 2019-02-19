@@ -7,8 +7,6 @@ import javax.validation.constraints.NotNull;
 
 import org.springframework.data.annotation.Id;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 import lombok.Data;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.Assortment;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.Attribute;
