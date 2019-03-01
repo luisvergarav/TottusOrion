@@ -53,6 +53,7 @@ repositories {
 ext {
 	set('azureVersion', '2.0.8')
 	    eventAdapterASBVersion = '0.0.1'
+<<<<<<< HEAD
 	     springfoxVersion = '2.9.2'
 }
 
@@ -82,6 +83,33 @@ dependencies {
 		 compile "io.springfox:springfox-swagger-ui:${springfoxVersion}"
     compile "io.springfox:springfox-swagger2:${springfoxVersion}"
   
+=======
+}
+
+
+dependencies {
+  //event-adapter-azure-service-bus-support
+  		implementation('org.springframework.boot:spring-boot-starter-web')
+	implementation('org.springframework.boot:spring-boot-starter-actuator')
+	implementation('org.springframework.boot:spring-boot-starter-data-rest')
+	
+	  compile "corp.falabella.event:event-adapter-azureservicebus-support:${eventAdapterASBVersion}"
+	
+	
+   	compileOnly("org.projectlombok:lombok:1.16.10")
+   	// https://mvnrepository.com/artifact/com.microsoft.azure/azure-servicebus-spring-boot-starter
+	compile group: 'com.microsoft.azure', name: 'azure-servicebus-spring-boot-starter', version: '2.1.0'
+   	// https://mvnrepository.com/artifact/com.microsoft.azure/azure-eventgrid
+	compile group: 'com.microsoft.azure', name: 'azure-eventgrid', version: '1.2.0'
+    compile 'com.microsoft.azure.eventgrid-2018-01-01:azure-mgmt-eventgrid:1.0.0-beta-1'
+    // https://mvnrepository.com/artifact/com.microsoft.azure/azure-eventhubs
+	compile group: 'com.microsoft.azure', name: 'azure-eventhubs', version: '2.1.0'
+	// https://mvnrepository.com/artifact/com.microsoft.azure/azure-mgmt-eventhub
+	compile group: 'com.microsoft.azure', name: 'azure-mgmt-eventhub', version: '1.7.0'
+		//swagger
+    compile group: 'io.swagger', name: 'swagger-jersey-jaxrs', version: '1.5.17'
+	compile group: 'org.webjars', name: 'swagger-ui', version: '3.8.0'
+>>>>>>> branch 'master' of https://github.com/luisvergarav/TottusOrion.git
 	// https://mvnrepository.com/artifact/com.microsoft.azure/azure-documentdb-spring-boot-starter
 compile group: 'com.microsoft.azure', name: 'azure-documentdb-spring-boot-starter', version: '2.0.5'
 	compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.9.7'

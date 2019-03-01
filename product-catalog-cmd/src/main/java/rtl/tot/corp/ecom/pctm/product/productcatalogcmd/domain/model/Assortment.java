@@ -11,5 +11,4 @@ public Assortment(Integer store) {
 	this.store = store;
 }
 public Assortment() {
-}
-}
+}}

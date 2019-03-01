@@ -5,9 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 import com.microsoft.azure.servicebus.QueueClient;
-
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
-
 @SpringBootApplication
 public class ProductCatalogCmdApplication {
 
