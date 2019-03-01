@@ -248,7 +248,7 @@ public class ProductController {
 	
 	
 	
-	@RequestMapping(path = "/MREX/PRMG/v1.0/PRODUCT/{skuId}/{ean}", method = PUT)
+	@RequestMapping(path = "/MREX/PRMG/v1.0/PRODUCT/{skuId}", method = PUT)
 	@ApiOperation(value = "Update a Product Hierarchy", response = APIResponse.class)
 	public ResponseEntity<APIResponse> updateProductHierarchy(@PathVariable String skuId, @RequestBody ProductHierarchyUpdate hierarchy) {
 
