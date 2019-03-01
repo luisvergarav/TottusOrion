@@ -201,7 +201,7 @@ public class ProductController {
 	
 	
 	
-	@RequestMapping(path = "/MREX/PRMG/v1.0/PRODUCT/{skuId}/{ean}", method = PUT)
+	@RequestMapping(path = "/MREX/PRMG/v1.0/PRODUCT/{skuId}/ean/{ean}", method = PUT)
 	@ApiOperation(value = "Update a Product Ean", response = APIResponse.class)
 	public ResponseEntity<APIResponse> updateProductEan(@PathVariable String skuId, @PathVariable String ean) {
 
@@ -248,7 +248,7 @@ public class ProductController {
 	
 	
 	
-	@RequestMapping(path = "/MREX/PRMG/v1.0/PRODUCT/{skuId}", method = PUT)
+	@RequestMapping(path = "/MREX/PRMG/v1.0/PRODUCT/{skuId}/hierarchy", method = PUT)
 	@ApiOperation(value = "Update a Product Hierarchy", response = APIResponse.class)
 	public ResponseEntity<APIResponse> updateProductHierarchy(@PathVariable String skuId, @RequestBody ProductHierarchyUpdate hierarchy) {
 
@@ -273,8 +273,7 @@ public class ProductController {
 		log.info("Update Product Hierarchy request.", skuId + " " + hierarchy);
 		try {
 
-				
-			HierarchyUpdateProductCommandImpl cmd = new HierarchyUpdateProductCommandImpl(hierarchy);
+			HierarchyUpdateProductCommandImpl cmd = new HierarchyUpdateProductCommandImpl(hierarchy,skuId);
 
 			if (cmdHierarchyUpdateBus.execute(cmd))
 				log.info("Product Hierarchy Updated successful ", skuId);

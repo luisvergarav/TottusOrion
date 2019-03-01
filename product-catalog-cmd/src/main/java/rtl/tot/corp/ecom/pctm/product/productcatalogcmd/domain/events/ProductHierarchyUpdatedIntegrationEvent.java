@@ -15,7 +15,7 @@ import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters
 public class ProductHierarchyUpdatedIntegrationEvent  implements EventDomain {
 	@Id
 	@NotNull
-	String skuCode;
+	String sku;
 
 	Hierarchy hierarchy = new Hierarchy();
 	
@@ -26,7 +26,7 @@ public class ProductHierarchyUpdatedIntegrationEvent  implements EventDomain {
 	@JsonIgnore
 	public String getEntityId() {
 		// TODO Auto-generated method stub
-		return skuCode;
+		return sku;
 	}
 
 	@Override

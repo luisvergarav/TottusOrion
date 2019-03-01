@@ -1,53 +1,42 @@
 package rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters;
 
+import javax.validation.constraints.NotNull;
+
 import lombok.Data;
+import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.Hierarchy;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.ports.CreateProductCommand;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.http.rest.domain.ProductHierarchyUpdate;
 
 @Data
 public class HierarchyUpdateProductCommandImpl implements CreateProductCommand<ProductHierarchyUpdate> {
 	
-	
-	String skuCode;
-	String skuName;
-	Long skuCodeLevel;
-	String subClass;
-	String subClassName;
-	Integer subClassLevel;
-	String clazz;
-	String className;
-	Integer classLevel;
-	String subDepartment;
-	String subDepartmentName;
-	Integer subDepartmentLevel;
-	String department;
-	String departmentName;
-	Integer departmentLevel;
-	String division;
-	String divisionName;
-	Integer divisionLevel;
+
+	String sku;
+	Hierarchy hierarchy = new Hierarchy();
+
 	
 
-	public HierarchyUpdateProductCommandImpl(ProductHierarchyUpdate productHierarchyUpdate) {
+	public HierarchyUpdateProductCommandImpl(ProductHierarchyUpdate productHierarchyUpdate,String sku) {
 		super();
-		this.skuCode = productHierarchyUpdate.getSkuCode();
-		this.skuName = productHierarchyUpdate.getSkuName();
-		this.skuCodeLevel = productHierarchyUpdate.getSkuCodeLevel();
-		this.subClass = productHierarchyUpdate.getSubClass();
-		this.subClassName = productHierarchyUpdate.getSubClassName();
-		this.subClassLevel = productHierarchyUpdate.getSubClassLevel();
-		this.clazz = productHierarchyUpdate.getClazz();
-		this.className = productHierarchyUpdate.getClassName();
-		this.classLevel = productHierarchyUpdate.getClassLevel();
-		this.subDepartment = productHierarchyUpdate.getSubDepartment();
-		this.subDepartmentName = productHierarchyUpdate.getSubDepartmentName();
-		this.subDepartmentLevel = productHierarchyUpdate.getSubDepartmentLevel();
-		this.department = productHierarchyUpdate.getDepartment();
-		this.departmentName = productHierarchyUpdate.getDepartmentName();
-		this.departmentLevel = productHierarchyUpdate.getDepartmentLevel();
-		this.division = productHierarchyUpdate.getDivision();
-		this.divisionName = productHierarchyUpdate.getDivisionName();
-		this.divisionLevel = productHierarchyUpdate.getDivisionLevel();
+		this.sku = sku;
+		this.hierarchy.setSkuCode(productHierarchyUpdate.getSkuCode());
+		this.hierarchy.setSkuName( productHierarchyUpdate.getSkuName());
+		this.hierarchy.setSkuCodeLevel(productHierarchyUpdate.getSkuCodeLevel());
+		this.hierarchy.setSubClass(productHierarchyUpdate.getSubClass());
+		this.hierarchy.setSubClassName(productHierarchyUpdate.getSubClassName());
+		this.hierarchy.setSubClassLevel(productHierarchyUpdate.getSubClassLevel());
+		this.hierarchy.setClazz(productHierarchyUpdate.getClazz());
+		this.hierarchy.setClassName(productHierarchyUpdate.getClassName());
+		this.hierarchy.setClassLevel(productHierarchyUpdate.getClassLevel());
+		this.hierarchy.setSubDepartment(productHierarchyUpdate.getSubDepartment());
+		this.hierarchy.setSubDepartmentName(productHierarchyUpdate.getSubDepartmentName());
+		this.hierarchy.setSubDepartmentLevel(productHierarchyUpdate.getSubDepartmentLevel());
+		this.hierarchy.setDepartment(productHierarchyUpdate.getDepartment());
+		this.hierarchy.setDepartmentName(productHierarchyUpdate.getDepartmentName());
+		this.hierarchy.setDepartmentLevel(productHierarchyUpdate.getDepartmentLevel());
+		this.hierarchy.setDivision(productHierarchyUpdate.getDivision());
+		this.hierarchy.setDivisionName(productHierarchyUpdate.getDivisionName());
+		this.hierarchy.setDivisionLevel(productHierarchyUpdate.getDivisionLevel());
 		}
 
 	

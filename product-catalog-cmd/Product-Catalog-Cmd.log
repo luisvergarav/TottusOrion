@@ -354,3 +354,491 @@ com.microsoft.azure.servicebus.primitives.ServiceBusException: Error{condition=p
 	at java.lang.Thread.run(Thread.java:748)
 2019-01-30 19:11:35 WARN - Completing all pending requests with exception in request response link to $cbs - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
 >>>>>>> branch 'master' of https://github.com/luisvergarav/TottusOrion.git
+2019-03-01 01:20:56 INFO - Starting ProductCatalogCmdApplication on MOEXT_LAVER with PID 21980 (C:\addesa\API\Peru\Tottus\Orion\Desarrollo\git\product-catalog-cmd\bin\main started by ext_lavergarav in C:\addesa\API\Peru\Tottus\Orion\Desarrollo\git\product-catalog-cmd) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:20:56 INFO - No active profile set, falling back to default profiles: default - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:20:59 INFO - Bootstrapping Spring Data repositories in DEFAULT mode. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:20:59 INFO - Finished Spring Data repository scanning in 168ms. Found 1 repository interfaces. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:00 INFO - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$1de0b75c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:01 INFO - Tomcat initialized with port(s): 8082 (http) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:01 INFO - Initializing ProtocolHandler ["http-nio-8082"] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:01 INFO - Starting service [Tomcat] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:01 INFO - Starting Servlet engine: [Apache Tomcat/9.0.14] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:01 INFO - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\environments\oracle\java\8\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files (x86)/Java/jre1.8.0_201/bin/client;C:/Program Files (x86)/Java/jre1.8.0_201/bin;C:/Program Files (x86)/Java/jre1.8.0_201/lib/i386;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\environments\oracle\db\10g\app\oracle\product\10.2.0\server\bin;C:\app\ext_lavergarav\product\12.1.0\dbhome_1\bin;C:\environments\oracle\db\12.1.0\dbhome_1\bin;C:\sybase\Shared\Sybase Central 4.3;C:\sybase\OCS-12_5\lib3p;C:\sybase\OCS-12_5\dll;C:\sybase\OCS-12_5\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Lenovo\Access Connections\;C:\Program Files\Lenovo\Fingerprint Manager Pro\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\SDL International\SDLX;C:\Program Files\MATLAB\R2016b\bin;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\PuTTY\;C:\Program Files\Java\jdk1.8.0_192\bin;C:\Users\ext_lavergarav\.azure-kubectl;C:\Program Files\Git\cmd;C:\Program Files (x86)\Nmap;C:\Program Files\Docker Toolbox;C:\Users\ext_lavergarav\Desktop\sts-bundle\sts-3.9.3.RELEASE;;.] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:02 INFO - Initializing Spring embedded WebApplicationContext - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:02 INFO - Root WebApplicationContext: initialization completed in 5525 ms - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:20 INFO - Initializing DocumentClient with serviceEndpoint [https://tot-pe-mrex-prmg-product-qa.documents.azure.com:443/], ConnectionPolicy [ConnectionPolicy [requestTimeout=60, mediaRequestTimeout=300, connectionMode=Gateway, mediaReadMode=Buffered, maxPoolSize=400, idleConnectionTimeout=60, userAgentSuffix=;spring-data/2.0.5;f463404a5ff4cc47457ff6b1f64d28d4b5b2d1246c850571412bb6465d8f0556, retryOptions=com.microsoft.azure.documentdb.RetryOptions@2f859, enableEndpointDiscovery=true, preferredLocations=null]], ConsistencyLevel [null] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:23 WARN - 'Windows 10' with 'x86' system is not compatible with native library. JNI not loaded. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:24 INFO - Creating MessagingFactory to namespace 'sb://tot-corp-orion-int-qa.servicebus.windows.net/' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:24 INFO - Creating messaging factory from namespace endpoint uri 'sb://tot-corp-orion-int-qa.servicebus.windows.net/' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:24 INFO - Creating and starting reactor - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:24 INFO - Started reactor - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:24 INFO - starting reactor instance. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:24 INFO - Creating connection to host 'tot-corp-orion-int-qa.servicebus.windows.net:5671' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:26 INFO - MessagingFactory opened. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:26 INFO - Connection opened to host. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:26 INFO - Created MessagingFactory to namespace 'sb://tot-corp-orion-int-qa.servicebus.windows.net/' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:26 INFO - Creating MessageSender to entity 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:26 INFO - Creating CBS link to $cbs - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:26 INFO - Creating core message sender to 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:26 INFO - Opened requestresponselink to $cbs - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:26 INFO - Created CBS link to $cbs - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:27 INFO - Creating send link to 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:27 INFO - Opened send link to 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:27 INFO - Created MessageSender to entity 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:27 INFO - Created topic client to connection string 'Endpoint=sb://tot-corp-orion-int-qa.servicebus.windows.net/;EntityPath=tot-corp-orion-productchanges-topic-mid;' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:29 INFO - Exposing 2 endpoint(s) beneath base path '/actuator' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:29 INFO - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:29 INFO - Initializing ExecutorService 'applicationTaskExecutor' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:31 INFO - Initializing DocumentClient with serviceEndpoint [https://tot-pe-mrex-prmg-product-qa.documents.azure.com:443/], ConnectionPolicy [ConnectionPolicy [requestTimeout=60, mediaRequestTimeout=300, connectionMode=Gateway, mediaReadMode=Buffered, maxPoolSize=400, idleConnectionTimeout=60, userAgentSuffix=;spring-data/2.0.5;f463404a5ff4cc47457ff6b1f64d28d4b5b2d1246c850571412bb6465d8f0556, retryOptions=com.microsoft.azure.documentdb.RetryOptions@2f859, enableEndpointDiscovery=true, preferredLocations=null]], ConsistencyLevel [null] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:33 INFO - Context refreshed - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:33 INFO - Found 1 custom documentation plugin(s) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:33 INFO - Scanning for api listing references - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:33 INFO - Generating unique operation named: updateProductUsingPUT_1 - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:33 INFO - Starting ProtocolHandler ["http-nio-8082"] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:33 INFO - Tomcat started on port(s): 8082 (http) with context path '' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:33 INFO - Started ProductCatalogCmdApplication in 38.134 seconds (JVM running for 39.787) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:39 INFO - Application shutdown requested. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:39 INFO - Closing DocumentClient - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:39 WARN - Preferred location background task was interrupted - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 01:21:39 INFO - Shutting down ExecutorService 'applicationTaskExecutor' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:24 INFO - Starting ProductCatalogCmdApplication on MOEXT_LAVER with PID 21032 (C:\addesa\API\Peru\Tottus\Orion\Desarrollo\git\product-catalog-cmd\bin\main started by ext_lavergarav in C:\addesa\API\Peru\Tottus\Orion\Desarrollo\git\product-catalog-cmd) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:24 INFO - No active profile set, falling back to default profiles: default - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:26 INFO - Bootstrapping Spring Data repositories in DEFAULT mode. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:26 INFO - Finished Spring Data repository scanning in 325ms. Found 1 repository interfaces. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:28 INFO - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$47a99276] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:29 INFO - Tomcat initialized with port(s): 8082 (http) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:29 INFO - Initializing ProtocolHandler ["http-nio-8082"] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:29 INFO - Starting service [Tomcat] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:29 INFO - Starting Servlet engine: [Apache Tomcat/9.0.14] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:29 INFO - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\environments\oracle\java\8\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files (x86)/Java/jre1.8.0_201/bin/client;C:/Program Files (x86)/Java/jre1.8.0_201/bin;C:/Program Files (x86)/Java/jre1.8.0_201/lib/i386;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\environments\oracle\db\10g\app\oracle\product\10.2.0\server\bin;C:\app\ext_lavergarav\product\12.1.0\dbhome_1\bin;C:\environments\oracle\db\12.1.0\dbhome_1\bin;C:\sybase\Shared\Sybase Central 4.3;C:\sybase\OCS-12_5\lib3p;C:\sybase\OCS-12_5\dll;C:\sybase\OCS-12_5\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Lenovo\Access Connections\;C:\Program Files\Lenovo\Fingerprint Manager Pro\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\SDL International\SDLX;C:\Program Files\MATLAB\R2016b\bin;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\PuTTY\;C:\Program Files\Java\jdk1.8.0_192\bin;C:\Users\ext_lavergarav\.azure-kubectl;C:\Program Files\Git\cmd;C:\Program Files (x86)\Nmap;C:\Program Files\Docker Toolbox;C:\Users\ext_lavergarav\Desktop\sts-bundle\sts-3.9.3.RELEASE;;.] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:30 INFO - Initializing Spring embedded WebApplicationContext - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:30 INFO - Root WebApplicationContext: initialization completed in 5895 ms - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:53 INFO - Initializing DocumentClient with serviceEndpoint [https://tot-pe-mrex-prmg-product-qa.documents.azure.com:443/], ConnectionPolicy [ConnectionPolicy [requestTimeout=60, mediaRequestTimeout=300, connectionMode=Gateway, mediaReadMode=Buffered, maxPoolSize=400, idleConnectionTimeout=60, userAgentSuffix=;spring-data/2.0.5;f463404a5ff4cc47457ff6b1f64d28d4b5b2d1246c850571412bb6465d8f0556, retryOptions=com.microsoft.azure.documentdb.RetryOptions@151255a, enableEndpointDiscovery=true, preferredLocations=null]], ConsistencyLevel [null] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:55 WARN - 'Windows 10' with 'x86' system is not compatible with native library. JNI not loaded. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:57 INFO - Creating MessagingFactory to namespace 'sb://tot-corp-orion-int-qa.servicebus.windows.net/' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:57 INFO - Creating messaging factory from namespace endpoint uri 'sb://tot-corp-orion-int-qa.servicebus.windows.net/' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:57 INFO - Creating and starting reactor - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:57 INFO - starting reactor instance. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:57 INFO - Started reactor - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:57 INFO - Creating connection to host 'tot-corp-orion-int-qa.servicebus.windows.net:5671' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:59 INFO - MessagingFactory opened. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:59 INFO - Connection opened to host. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:59 INFO - Created MessagingFactory to namespace 'sb://tot-corp-orion-int-qa.servicebus.windows.net/' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:59 INFO - Creating MessageSender to entity 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:59 INFO - Creating CBS link to $cbs - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:59 INFO - Creating core message sender to 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:59 INFO - Opened requestresponselink to $cbs - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:59 INFO - Created CBS link to $cbs - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:19:59 INFO - Creating send link to 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:20:00 INFO - Opened send link to 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:20:00 INFO - Created MessageSender to entity 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:20:00 INFO - Created topic client to connection string 'Endpoint=sb://tot-corp-orion-int-qa.servicebus.windows.net/;EntityPath=tot-corp-orion-productchanges-topic-mid;' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:20:02 INFO - Exposing 2 endpoint(s) beneath base path '/actuator' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:20:02 INFO - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:20:02 INFO - Initializing ExecutorService 'applicationTaskExecutor' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:20:04 INFO - Initializing DocumentClient with serviceEndpoint [https://tot-pe-mrex-prmg-product-qa.documents.azure.com:443/], ConnectionPolicy [ConnectionPolicy [requestTimeout=60, mediaRequestTimeout=300, connectionMode=Gateway, mediaReadMode=Buffered, maxPoolSize=400, idleConnectionTimeout=60, userAgentSuffix=;spring-data/2.0.5;f463404a5ff4cc47457ff6b1f64d28d4b5b2d1246c850571412bb6465d8f0556, retryOptions=com.microsoft.azure.documentdb.RetryOptions@151255a, enableEndpointDiscovery=true, preferredLocations=null]], ConsistencyLevel [null] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:20:06 INFO - Context refreshed - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:20:06 INFO - Found 1 custom documentation plugin(s) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:20:06 INFO - Scanning for api listing references - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:20:06 INFO - Generating unique operation named: updateProductUsingPUT_1 - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:20:07 INFO - Starting ProtocolHandler ["http-nio-8082"] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:20:07 INFO - Tomcat started on port(s): 8082 (http) with context path '' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:20:07 INFO - Started ProductCatalogCmdApplication in 43.294 seconds (JVM running for 45.411) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:24:22 INFO - Initializing Spring DispatcherServlet 'dispatcherServlet' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:24:22 INFO - Initializing Servlet 'dispatcherServlet' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:24:22 INFO - Completed initialization in 62 ms - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:24:23ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Ambiguous handler methods mapped for '/MREX/PRMG/v1.0/PRODUCT/123/hierarchy': {public org.springframework.http.ResponseEntity rtl.tot.corp.ecom.pctm.product.productcatalogcmd.controllers.ProductController.updateProduct(java.lang.String,java.lang.String), public org.springframework.http.ResponseEntity rtl.tot.corp.ecom.pctm.product.productcatalogcmd.controllers.ProductController.updateProductEan(java.lang.String,java.lang.String)}] with root cause - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/MREX/PRMG/v1.0/PRODUCT/123/hierarchy': {public org.springframework.http.ResponseEntity rtl.tot.corp.ecom.pctm.product.productcatalogcmd.controllers.ProductController.updateProduct(java.lang.String,java.lang.String), public org.springframework.http.ResponseEntity rtl.tot.corp.ecom.pctm.product.productcatalogcmd.controllers.ProductController.updateProductEan(java.lang.String,java.lang.String)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:413)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:368)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:65)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:401)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1231)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1014)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:919)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-03-01 11:25:44 INFO - Application shutdown requested. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:25:44 INFO - Closing DocumentClient - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:25:44 WARN - Preferred location background task was interrupted - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:25:44 INFO - Shutting down ExecutorService 'applicationTaskExecutor' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:40 INFO - Starting ProductCatalogCmdApplication on MOEXT_LAVER with PID 22656 (C:\addesa\API\Peru\Tottus\Orion\Desarrollo\git\product-catalog-cmd\bin\main started by ext_lavergarav in C:\addesa\API\Peru\Tottus\Orion\Desarrollo\git\product-catalog-cmd) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:40 INFO - No active profile set, falling back to default profiles: default - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:42 INFO - Bootstrapping Spring Data repositories in DEFAULT mode. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:42 INFO - Finished Spring Data repository scanning in 124ms. Found 1 repository interfaces. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:43 INFO - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$2a75d169] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:43 INFO - Tomcat initialized with port(s): 8082 (http) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:43 INFO - Initializing ProtocolHandler ["http-nio-8082"] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:43 INFO - Starting service [Tomcat] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:43 INFO - Starting Servlet engine: [Apache Tomcat/9.0.14] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:43 INFO - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\environments\oracle\java\8\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files (x86)/Java/jre1.8.0_201/bin/client;C:/Program Files (x86)/Java/jre1.8.0_201/bin;C:/Program Files (x86)/Java/jre1.8.0_201/lib/i386;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\environments\oracle\db\10g\app\oracle\product\10.2.0\server\bin;C:\app\ext_lavergarav\product\12.1.0\dbhome_1\bin;C:\environments\oracle\db\12.1.0\dbhome_1\bin;C:\sybase\Shared\Sybase Central 4.3;C:\sybase\OCS-12_5\lib3p;C:\sybase\OCS-12_5\dll;C:\sybase\OCS-12_5\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Lenovo\Access Connections\;C:\Program Files\Lenovo\Fingerprint Manager Pro\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\SDL International\SDLX;C:\Program Files\MATLAB\R2016b\bin;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\PuTTY\;C:\Program Files\Java\jdk1.8.0_192\bin;C:\Users\ext_lavergarav\.azure-kubectl;C:\Program Files\Git\cmd;C:\Program Files (x86)\Nmap;C:\Program Files\Docker Toolbox;C:\Users\ext_lavergarav\Desktop\sts-bundle\sts-3.9.3.RELEASE;;.] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:44 INFO - Initializing Spring embedded WebApplicationContext - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:44 INFO - Root WebApplicationContext: initialization completed in 3358 ms - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:53 INFO - Initializing DocumentClient with serviceEndpoint [https://tot-pe-mrex-prmg-product-qa.documents.azure.com:443/], ConnectionPolicy [ConnectionPolicy [requestTimeout=60, mediaRequestTimeout=300, connectionMode=Gateway, mediaReadMode=Buffered, maxPoolSize=400, idleConnectionTimeout=60, userAgentSuffix=;spring-data/2.0.5;f463404a5ff4cc47457ff6b1f64d28d4b5b2d1246c850571412bb6465d8f0556, retryOptions=com.microsoft.azure.documentdb.RetryOptions@1ca9b64, enableEndpointDiscovery=true, preferredLocations=null]], ConsistencyLevel [null] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:55 WARN - 'Windows 10' with 'x86' system is not compatible with native library. JNI not loaded. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:56 INFO - Creating MessagingFactory to namespace 'sb://tot-corp-orion-int-qa.servicebus.windows.net/' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:56 INFO - Creating messaging factory from namespace endpoint uri 'sb://tot-corp-orion-int-qa.servicebus.windows.net/' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:56 INFO - Creating and starting reactor - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:56 INFO - Started reactor - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:56 INFO - starting reactor instance. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:56 INFO - Creating connection to host 'tot-corp-orion-int-qa.servicebus.windows.net:5671' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:57 INFO - MessagingFactory opened. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:57 INFO - Connection opened to host. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:57 INFO - Created MessagingFactory to namespace 'sb://tot-corp-orion-int-qa.servicebus.windows.net/' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:57 INFO - Creating MessageSender to entity 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:57 INFO - Creating CBS link to $cbs - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:57 INFO - Creating core message sender to 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:58 INFO - Opened requestresponselink to $cbs - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:58 INFO - Created CBS link to $cbs - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:58 INFO - Creating send link to 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:58 INFO - Opened send link to 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:58 INFO - Created MessageSender to entity 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:58 INFO - Created topic client to connection string 'Endpoint=sb://tot-corp-orion-int-qa.servicebus.windows.net/;EntityPath=tot-corp-orion-productchanges-topic-mid;' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:27:59 INFO - Exposing 2 endpoint(s) beneath base path '/actuator' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:28:00 INFO - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:28:00 INFO - Initializing ExecutorService 'applicationTaskExecutor' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:28:02 INFO - Initializing DocumentClient with serviceEndpoint [https://tot-pe-mrex-prmg-product-qa.documents.azure.com:443/], ConnectionPolicy [ConnectionPolicy [requestTimeout=60, mediaRequestTimeout=300, connectionMode=Gateway, mediaReadMode=Buffered, maxPoolSize=400, idleConnectionTimeout=60, userAgentSuffix=;spring-data/2.0.5;f463404a5ff4cc47457ff6b1f64d28d4b5b2d1246c850571412bb6465d8f0556, retryOptions=com.microsoft.azure.documentdb.RetryOptions@1ca9b64, enableEndpointDiscovery=true, preferredLocations=null]], ConsistencyLevel [null] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:28:03 INFO - Context refreshed - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:28:03 INFO - Found 1 custom documentation plugin(s) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:28:04 INFO - Scanning for api listing references - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:28:04 INFO - Generating unique operation named: updateProductUsingPUT_1 - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:28:04 INFO - Starting ProtocolHandler ["http-nio-8082"] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:28:04 INFO - Tomcat started on port(s): 8082 (http) with context path '' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:28:04 INFO - Started ProductCatalogCmdApplication in 24.309 seconds (JVM running for 25.939) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:28:40 INFO - Initializing Spring DispatcherServlet 'dispatcherServlet' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:28:40 INFO - Initializing Servlet 'dispatcherServlet' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:28:40 INFO - Completed initialization in 34 ms - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:28:40 INFO - PETottusPMM - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:28:40 INFO - Update Product Hierarchy request. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:28:40 INFO - Product Saved successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:28:40 INFO - Sending ProductHierarchyUpdatedEvent integration Event  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:28:40ERROR - productHierarchyUpdated event could not be send. Cause: Invalid parameter for entityId: null - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:28:40 INFO - Product Hierarchy Updated successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:35:58 INFO - PETottusPMM - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:35:58 INFO - Update Product Hierarchy request. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:35:58 INFO - Product Saved successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:35:58 INFO - Sending ProductHierarchyUpdatedEvent integration Event  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:35:58ERROR - productHierarchyUpdated event could not be send. Cause: Invalid parameter for entityId: null - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:35:58 INFO - Product Hierarchy Updated successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:36:50 INFO - PETottusPMM - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:36:50 INFO - Update Product Hierarchy request. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:36:50 INFO - Product Saved successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:36:50 INFO - Sending ProductHierarchyUpdatedEvent integration Event  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:36:50ERROR - productHierarchyUpdated event could not be send. Cause: Invalid parameter for entityId: null - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:36:50 INFO - Product Hierarchy Updated successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:37:19 INFO - PETottusPMM - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:37:19 INFO - Update Product Hierarchy request. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:37:19 INFO - Product Saved successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:37:19 INFO - Sending ProductHierarchyUpdatedEvent integration Event  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:37:19ERROR - productHierarchyUpdated event could not be send. Cause: Invalid parameter for entityId: null - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:37:19 INFO - Product Hierarchy Updated successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:37:36 INFO - Application shutdown requested. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:37:36 INFO - Closing DocumentClient - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:37:36 WARN - Preferred location background task was interrupted - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:37:36 INFO - Shutting down ExecutorService 'applicationTaskExecutor' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:25 INFO - Starting ProductCatalogCmdApplication on MOEXT_LAVER with PID 24388 (C:\addesa\API\Peru\Tottus\Orion\Desarrollo\git\product-catalog-cmd\bin\main started by ext_lavergarav in C:\addesa\API\Peru\Tottus\Orion\Desarrollo\git\product-catalog-cmd) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:25 INFO - No active profile set, falling back to default profiles: default - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:27 INFO - Bootstrapping Spring Data repositories in DEFAULT mode. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:27 INFO - Finished Spring Data repository scanning in 172ms. Found 1 repository interfaces. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:28 INFO - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$58805766] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:29 INFO - Tomcat initialized with port(s): 8082 (http) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:29 INFO - Initializing ProtocolHandler ["http-nio-8082"] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:29 INFO - Starting service [Tomcat] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:29 INFO - Starting Servlet engine: [Apache Tomcat/9.0.14] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:29 INFO - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\environments\oracle\java\8\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\environments\oracle\java\8\jdk\jre\bin;C:/Program Files (x86)/Java/jre1.8.0_201/bin/client;C:/Program Files (x86)/Java/jre1.8.0_201/bin;C:/Program Files (x86)/Java/jre1.8.0_201/lib/i386;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\environments\oracle\db\10g\app\oracle\product\10.2.0\server\bin;C:\app\ext_lavergarav\product\12.1.0\dbhome_1\bin;C:\environments\oracle\db\12.1.0\dbhome_1\bin;C:\sybase\Shared\Sybase Central 4.3;C:\sybase\OCS-12_5\lib3p;C:\sybase\OCS-12_5\dll;C:\sybase\OCS-12_5\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Lenovo\Access Connections\;C:\Program Files\Lenovo\Fingerprint Manager Pro\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\SDL International\SDLX;C:\Program Files\MATLAB\R2016b\bin;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\PuTTY\;C:\Program Files\Java\jdk1.8.0_192\bin;C:\Users\ext_lavergarav\.azure-kubectl;C:\Program Files\Git\cmd;C:\Program Files (x86)\Nmap;C:\Program Files\Docker Toolbox;C:\Users\ext_lavergarav\Desktop\sts-bundle\sts-3.9.3.RELEASE;;.] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:29 INFO - Initializing Spring embedded WebApplicationContext - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:29 INFO - Root WebApplicationContext: initialization completed in 4117 ms - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:40 INFO - Initializing DocumentClient with serviceEndpoint [https://tot-pe-mrex-prmg-product-qa.documents.azure.com:443/], ConnectionPolicy [ConnectionPolicy [requestTimeout=60, mediaRequestTimeout=300, connectionMode=Gateway, mediaReadMode=Buffered, maxPoolSize=400, idleConnectionTimeout=60, userAgentSuffix=;spring-data/2.0.5;f463404a5ff4cc47457ff6b1f64d28d4b5b2d1246c850571412bb6465d8f0556, retryOptions=com.microsoft.azure.documentdb.RetryOptions@a26eca, enableEndpointDiscovery=true, preferredLocations=null]], ConsistencyLevel [null] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:41 WARN - 'Windows 10' with 'x86' system is not compatible with native library. JNI not loaded. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:43 INFO - Creating MessagingFactory to namespace 'sb://tot-corp-orion-int-qa.servicebus.windows.net/' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:43 INFO - Creating messaging factory from namespace endpoint uri 'sb://tot-corp-orion-int-qa.servicebus.windows.net/' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:43 INFO - Creating and starting reactor - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:43 INFO - Started reactor - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:43 INFO - starting reactor instance. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:43 INFO - Creating connection to host 'tot-corp-orion-int-qa.servicebus.windows.net:5671' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:44 INFO - MessagingFactory opened. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:44 INFO - Connection opened to host. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:44 INFO - Created MessagingFactory to namespace 'sb://tot-corp-orion-int-qa.servicebus.windows.net/' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:44 INFO - Creating MessageSender to entity 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:44 INFO - Creating CBS link to $cbs - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:44 INFO - Creating core message sender to 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:44 INFO - Opened requestresponselink to $cbs - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:44 INFO - Created CBS link to $cbs - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:45 INFO - Creating send link to 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:45 INFO - Opened send link to 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:45 INFO - Created MessageSender to entity 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:45 INFO - Created topic client to connection string 'Endpoint=sb://tot-corp-orion-int-qa.servicebus.windows.net/;EntityPath=tot-corp-orion-productchanges-topic-mid;' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:47 INFO - Exposing 2 endpoint(s) beneath base path '/actuator' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:47 INFO - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:48 INFO - Initializing ExecutorService 'applicationTaskExecutor' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:50 INFO - Initializing DocumentClient with serviceEndpoint [https://tot-pe-mrex-prmg-product-qa.documents.azure.com:443/], ConnectionPolicy [ConnectionPolicy [requestTimeout=60, mediaRequestTimeout=300, connectionMode=Gateway, mediaReadMode=Buffered, maxPoolSize=400, idleConnectionTimeout=60, userAgentSuffix=;spring-data/2.0.5;f463404a5ff4cc47457ff6b1f64d28d4b5b2d1246c850571412bb6465d8f0556, retryOptions=com.microsoft.azure.documentdb.RetryOptions@a26eca, enableEndpointDiscovery=true, preferredLocations=null]], ConsistencyLevel [null] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:55 INFO - Context refreshed - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:55 INFO - Found 1 custom documentation plugin(s) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:55 INFO - Scanning for api listing references - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:56 INFO - Generating unique operation named: updateProductUsingPUT_1 - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:56 INFO - Starting ProtocolHandler ["http-nio-8082"] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:56 INFO - Tomcat started on port(s): 8082 (http) with context path '' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:38:56 INFO - Started ProductCatalogCmdApplication in 31.439 seconds (JVM running for 38.547) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:39:01 INFO - Initializing Spring DispatcherServlet 'dispatcherServlet' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:39:01 INFO - Initializing Servlet 'dispatcherServlet' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:39:01 INFO - Completed initialization in 40 ms - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:55:42 INFO - PETottusPMM - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:55:45 INFO - Update Product Hierarchy request. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:58:13 INFO - Product Saved successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 11:58:15 INFO - Sending ProductHierarchyUpdatedEvent integration Event  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 12:37:59ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.Error: Unresolved compilation problem: 
+	skuCode cannot be resolved to a variable
+] with root cause - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+java.lang.Error: Unresolved compilation problem: 
+	skuCode cannot be resolved to a variable
+
+	at rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.DecoratorHierarchyUpdateProductCommandBus.execute(DecoratorHierarchyUpdateProductCommandBus.java:36)
+	at rtl.tot.corp.ecom.pctm.product.productcatalogcmd.controllers.ProductController.updateProductHierarchy(ProductController.java:279)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:919)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-03-01 14:41:46 INFO - Starting ProductCatalogCmdApplication on MOEXT_LAVER with PID 17496 (C:\addesa\API\Peru\Tottus\Orion\Desarrollo\git\product-catalog-cmd\bin\main started by ext_lavergarav in C:\addesa\API\Peru\Tottus\Orion\Desarrollo\git\product-catalog-cmd) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:41:46 INFO - No active profile set, falling back to default profiles: default - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:41:48 INFO - Bootstrapping Spring Data repositories in DEFAULT mode. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:41:49 INFO - Finished Spring Data repository scanning in 186ms. Found 1 repository interfaces. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:41:50 INFO - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$ad6228e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:41:50 INFO - Tomcat initialized with port(s): 8082 (http) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:41:51 INFO - Initializing ProtocolHandler ["http-nio-8082"] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:41:51 INFO - Starting service [Tomcat] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:41:51 INFO - Starting Servlet engine: [Apache Tomcat/9.0.14] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:41:51 INFO - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\environments\oracle\java\8\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files (x86)/Java/jre1.8.0_201/bin/client;C:/Program Files (x86)/Java/jre1.8.0_201/bin;C:/Program Files (x86)/Java/jre1.8.0_201/lib/i386;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\environments\oracle\db\10g\app\oracle\product\10.2.0\server\bin;C:\app\ext_lavergarav\product\12.1.0\dbhome_1\bin;C:\environments\oracle\db\12.1.0\dbhome_1\bin;C:\sybase\Shared\Sybase Central 4.3;C:\sybase\OCS-12_5\lib3p;C:\sybase\OCS-12_5\dll;C:\sybase\OCS-12_5\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Lenovo\Access Connections\;C:\Program Files\Lenovo\Fingerprint Manager Pro\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\SDL International\SDLX;C:\Program Files\MATLAB\R2016b\bin;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\PuTTY\;C:\Program Files\Java\jdk1.8.0_192\bin;C:\Users\ext_lavergarav\.azure-kubectl;C:\Program Files\Git\cmd;C:\Program Files (x86)\Nmap;C:\Program Files\Docker Toolbox;C:\Users\ext_lavergarav\Desktop\sts-bundle\sts-3.9.3.RELEASE;;.] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:41:51 INFO - Initializing Spring embedded WebApplicationContext - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:41:51 INFO - Root WebApplicationContext: initialization completed in 4992 ms - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:29 INFO - Initializing DocumentClient with serviceEndpoint [https://tot-pe-mrex-prmg-product-qa.documents.azure.com:443/], ConnectionPolicy [ConnectionPolicy [requestTimeout=60, mediaRequestTimeout=300, connectionMode=Gateway, mediaReadMode=Buffered, maxPoolSize=400, idleConnectionTimeout=60, userAgentSuffix=;spring-data/2.0.5;f463404a5ff4cc47457ff6b1f64d28d4b5b2d1246c850571412bb6465d8f0556, retryOptions=com.microsoft.azure.documentdb.RetryOptions@132721e, enableEndpointDiscovery=true, preferredLocations=null]], ConsistencyLevel [null] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:31 WARN - 'Windows 10' with 'x86' system is not compatible with native library. JNI not loaded. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:32 INFO - Creating MessagingFactory to namespace 'sb://tot-corp-orion-int-qa.servicebus.windows.net/' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:32 INFO - Creating messaging factory from namespace endpoint uri 'sb://tot-corp-orion-int-qa.servicebus.windows.net/' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:32 INFO - Creating and starting reactor - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:32 INFO - starting reactor instance. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:32 INFO - Started reactor - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:32 INFO - Creating connection to host 'tot-corp-orion-int-qa.servicebus.windows.net:5671' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:34 INFO - MessagingFactory opened. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:34 INFO - Connection opened to host. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:34 INFO - Created MessagingFactory to namespace 'sb://tot-corp-orion-int-qa.servicebus.windows.net/' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:34 INFO - Creating MessageSender to entity 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:34 INFO - Creating CBS link to $cbs - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:34 INFO - Creating core message sender to 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:34 INFO - Opened requestresponselink to $cbs - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:34 INFO - Created CBS link to $cbs - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:35 INFO - Creating send link to 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:35 INFO - Opened send link to 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:35 INFO - Created MessageSender to entity 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:35 INFO - Created topic client to connection string 'Endpoint=sb://tot-corp-orion-int-qa.servicebus.windows.net/;EntityPath=tot-corp-orion-productchanges-topic-mid;' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:36 INFO - Exposing 2 endpoint(s) beneath base path '/actuator' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:37 INFO - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:37 INFO - Initializing ExecutorService 'applicationTaskExecutor' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:39 INFO - Initializing DocumentClient with serviceEndpoint [https://tot-pe-mrex-prmg-product-qa.documents.azure.com:443/], ConnectionPolicy [ConnectionPolicy [requestTimeout=60, mediaRequestTimeout=300, connectionMode=Gateway, mediaReadMode=Buffered, maxPoolSize=400, idleConnectionTimeout=60, userAgentSuffix=;spring-data/2.0.5;f463404a5ff4cc47457ff6b1f64d28d4b5b2d1246c850571412bb6465d8f0556, retryOptions=com.microsoft.azure.documentdb.RetryOptions@132721e, enableEndpointDiscovery=true, preferredLocations=null]], ConsistencyLevel [null] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:41 INFO - Context refreshed - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:41 INFO - Found 1 custom documentation plugin(s) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:41 INFO - Scanning for api listing references - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:41 INFO - Generating unique operation named: updateProductUsingPUT_1 - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:41 INFO - Starting ProtocolHandler ["http-nio-8082"] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:41 INFO - Tomcat started on port(s): 8082 (http) with context path '' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:41 INFO - Started ProductCatalogCmdApplication in 56.167 seconds (JVM running for 61.868) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:45 INFO - Initializing Spring DispatcherServlet 'dispatcherServlet' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:45 INFO - Initializing Servlet 'dispatcherServlet' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:45 INFO - Completed initialization in 46 ms - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:46 INFO - PETottusPMM - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:46 INFO - Update Product Hierarchy request. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:46 INFO - Product Saved successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:46 INFO - Sending ProductHierarchyUpdatedEvent integration Event  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:46 INFO - Event published: {"sku":"123","hierarchy":{"skuCode":"123","skuName":"ACEITE IDEAL","skuCodeLevel":null,"subClass":null,"subClassName":null,"subClassLevel":null,"className":null,"classLevel":null,"subDepartment":null,"subDepartmentName":null,"subDepartmentLevel":null,"department":null,"departmentName":null,"departmentLevel":null,"division":"J01","divisionName":"PGC COMESTIBLES","divisionLevel":null,"class":null}} - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:42:46 INFO - Product Hierarchy Updated successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:43:42 INFO - Application shutdown requested. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:43:42 INFO - Closing DocumentClient - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:43:42 WARN - Preferred location background task was interrupted - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:43:42 INFO - Shutting down ExecutorService 'applicationTaskExecutor' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:43:59 INFO - Starting ProductCatalogCmdApplication on MOEXT_LAVER with PID 12564 (C:\addesa\API\Peru\Tottus\Orion\Desarrollo\git\product-catalog-cmd\bin\main started by ext_lavergarav in C:\addesa\API\Peru\Tottus\Orion\Desarrollo\git\product-catalog-cmd) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:43:59 INFO - No active profile set, falling back to default profiles: default - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:02 INFO - Bootstrapping Spring Data repositories in DEFAULT mode. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:02 INFO - Finished Spring Data repository scanning in 153ms. Found 1 repository interfaces. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:03 INFO - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$f39d3aaf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:03 INFO - Tomcat initialized with port(s): 8082 (http) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:03 INFO - Initializing ProtocolHandler ["http-nio-8082"] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:03 INFO - Starting service [Tomcat] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:03 INFO - Starting Servlet engine: [Apache Tomcat/9.0.14] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:03 INFO - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\environments\oracle\java\8\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files (x86)/Java/jre1.8.0_201/bin/client;C:/Program Files (x86)/Java/jre1.8.0_201/bin;C:/Program Files (x86)/Java/jre1.8.0_201/lib/i386;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\environments\oracle\db\10g\app\oracle\product\10.2.0\server\bin;C:\app\ext_lavergarav\product\12.1.0\dbhome_1\bin;C:\environments\oracle\db\12.1.0\dbhome_1\bin;C:\sybase\Shared\Sybase Central 4.3;C:\sybase\OCS-12_5\lib3p;C:\sybase\OCS-12_5\dll;C:\sybase\OCS-12_5\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Lenovo\Access Connections\;C:\Program Files\Lenovo\Fingerprint Manager Pro\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\SDL International\SDLX;C:\Program Files\MATLAB\R2016b\bin;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\PuTTY\;C:\Program Files\Java\jdk1.8.0_192\bin;C:\Users\ext_lavergarav\.azure-kubectl;C:\Program Files\Git\cmd;C:\Program Files (x86)\Nmap;C:\Program Files\Docker Toolbox;C:\Users\ext_lavergarav\Desktop\sts-bundle\sts-3.9.3.RELEASE;;.] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:04 INFO - Initializing Spring embedded WebApplicationContext - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:04 INFO - Root WebApplicationContext: initialization completed in 4559 ms - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:15 INFO - Initializing DocumentClient with serviceEndpoint [https://tot-pe-mrex-prmg-product-qa.documents.azure.com:443/], ConnectionPolicy [ConnectionPolicy [requestTimeout=60, mediaRequestTimeout=300, connectionMode=Gateway, mediaReadMode=Buffered, maxPoolSize=400, idleConnectionTimeout=60, userAgentSuffix=;spring-data/2.0.5;f463404a5ff4cc47457ff6b1f64d28d4b5b2d1246c850571412bb6465d8f0556, retryOptions=com.microsoft.azure.documentdb.RetryOptions@149c070, enableEndpointDiscovery=true, preferredLocations=null]], ConsistencyLevel [null] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:16 WARN - 'Windows 10' with 'x86' system is not compatible with native library. JNI not loaded. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:18 INFO - Creating MessagingFactory to namespace 'sb://tot-corp-orion-int-qa.servicebus.windows.net/' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:18 INFO - Creating messaging factory from namespace endpoint uri 'sb://tot-corp-orion-int-qa.servicebus.windows.net/' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:18 INFO - Creating and starting reactor - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:18 INFO - starting reactor instance. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:18 INFO - Started reactor - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:18 INFO - Creating connection to host 'tot-corp-orion-int-qa.servicebus.windows.net:5671' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:19 INFO - MessagingFactory opened. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:19 INFO - Connection opened to host. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:19 INFO - Created MessagingFactory to namespace 'sb://tot-corp-orion-int-qa.servicebus.windows.net/' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:19 INFO - Creating CBS link to $cbs - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:19 INFO - Creating MessageSender to entity 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:19 INFO - Creating core message sender to 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:20 INFO - Opened requestresponselink to $cbs - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:20 INFO - Created CBS link to $cbs - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:20 INFO - Creating send link to 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:20 INFO - Opened send link to 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:20 INFO - Created MessageSender to entity 'tot-corp-orion-productchanges-topic-mid' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:20 INFO - Created topic client to connection string 'Endpoint=sb://tot-corp-orion-int-qa.servicebus.windows.net/;EntityPath=tot-corp-orion-productchanges-topic-mid;' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:22 INFO - Exposing 2 endpoint(s) beneath base path '/actuator' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:23 INFO - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:23 INFO - Initializing ExecutorService 'applicationTaskExecutor' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:26 INFO - Initializing DocumentClient with serviceEndpoint [https://tot-pe-mrex-prmg-product-qa.documents.azure.com:443/], ConnectionPolicy [ConnectionPolicy [requestTimeout=60, mediaRequestTimeout=300, connectionMode=Gateway, mediaReadMode=Buffered, maxPoolSize=400, idleConnectionTimeout=60, userAgentSuffix=;spring-data/2.0.5;f463404a5ff4cc47457ff6b1f64d28d4b5b2d1246c850571412bb6465d8f0556, retryOptions=com.microsoft.azure.documentdb.RetryOptions@149c070, enableEndpointDiscovery=true, preferredLocations=null]], ConsistencyLevel [null] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:27 INFO - Context refreshed - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:27 INFO - Found 1 custom documentation plugin(s) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:27 INFO - Scanning for api listing references - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:28 INFO - Generating unique operation named: updateProductUsingPUT_1 - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:28 INFO - Starting ProtocolHandler ["http-nio-8082"] - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:28 INFO - Tomcat started on port(s): 8082 (http) with context path '' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:44:28 INFO - Started ProductCatalogCmdApplication in 29.261 seconds (JVM running for 31.15) - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:45:21 INFO - Initializing Spring DispatcherServlet 'dispatcherServlet' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:45:21 INFO - Initializing Servlet 'dispatcherServlet' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:45:21 INFO - Completed initialization in 51 ms - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:45:21 INFO - PETottusPMM - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:45:21 INFO - Update Product Hierarchy request. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:45:21 INFO - Product Saved successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:45:21 INFO - Sending ProductHierarchyUpdatedEvent integration Event  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:45:21 INFO - Event published: {"sku":"123","hierarchy":{"skuCode":"41234533","skuName":"ACEITE IDEAL","skuCodeLevel":null,"subClass":null,"subClassName":null,"subClassLevel":null,"className":null,"classLevel":null,"subDepartment":null,"subDepartmentName":null,"subDepartmentLevel":null,"department":null,"departmentName":null,"departmentLevel":null,"division":"J01","divisionName":"PGC COMESTIBLES","divisionLevel":null,"class":null}} - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:45:21 INFO - Product Hierarchy Updated successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:49:09 INFO - PETottusPMM - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:49:09 INFO - Update Product Hierarchy request. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:49:09 INFO - Product Saved successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:49:09 INFO - Sending ProductHierarchyUpdatedEvent integration Event  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:49:09 INFO - Event published: {"sku":"123","hierarchy":{"skuCode":"41234533","skuName":"ACEITE IDEAL","skuCodeLevel":1,"subClass":"J0101010101","subClassName":"ACEITE DE MAIZ","subClassLevel":2,"className":"ACEITES","classLevel":3,"subDepartment":"J010101","subDepartmentName":null,"subDepartmentLevel":4,"department":"J0101","departmentName":"ABARROTES","departmentLevel":5,"division":"J01","divisionName":"PGC COMESTIBLES","divisionLevel":6,"class":"J01010101"}} - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:49:09 INFO - Product Hierarchy Updated successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:49:38 INFO - PETottusPMM - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:49:38 INFO - Update Product Hierarchy request. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:49:38 INFO - Product Saved successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:49:38 INFO - Sending ProductHierarchyUpdatedEvent integration Event  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:49:39 INFO - Event published: {"sku":"123","hierarchy":{"skuCode":"41234533","skuName":"ACEITE IDEAL","skuCodeLevel":1,"subClass":"J0101010101","subClassName":"ACEITE DE MAIZ","subClassLevel":2,"className":"ACEITES","classLevel":3,"subDepartment":"J010101","subDepartmentName":"ALIMENTOS BASICOS","subDepartmentLevel":4,"department":"J0101","departmentName":"ABARROTES","departmentLevel":5,"division":"J01","divisionName":"PGC COMESTIBLES","divisionLevel":6,"class":"J01010101"}} - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:49:39 INFO - Product Hierarchy Updated successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:51:54 INFO - nullnullnull - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:51:54 INFO - Update Product Ean request. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:51:54 INFO - Product Saved successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:51:54 INFO - Sending ProductEanUpdatedEvent integration Event  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:51:54ERROR - productEanUpdated event could not be send. Cause: Invalid parameter for country: null - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:51:54 INFO - Product Ean not Updated  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:53:10 INFO - PETottusPMM - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:53:10 INFO - Update Product Ean request. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:53:10 INFO - Product Saved successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:53:10 INFO - Sending ProductEanUpdatedEvent integration Event  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:53:10 INFO - Event published: {"sku":"123","ean":"234"} - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 14:53:10 INFO - Product Ean Updated successful  - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 15:09:05 INFO - Application shutdown requested. - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 15:09:05 INFO - Closing DocumentClient - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 15:09:05 WARN - Preferred location background task was interrupted - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 
+2019-03-01 15:09:05 INFO - Shutting down ExecutorService 'applicationTaskExecutor' - txEpd= txRef= cmRef= nodeRef= usrTx= rhsRef= commerce= country= 

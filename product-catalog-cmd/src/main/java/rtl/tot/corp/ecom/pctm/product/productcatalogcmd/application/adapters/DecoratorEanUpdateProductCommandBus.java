@@ -40,8 +40,8 @@ public class DecoratorEanUpdateProductCommandBus implements CommandBus<EanUpdate
     	        if  (this.bus.execute(command)) {
     	            log.info("Sending ProductEanUpdatedEvent integration Event " , command.getSku());
     	       	 
-    	        	publisher.publish(EventType.PRODUCT_EANUPDATED, integrationEvent);
-    				return true;    	        
+    	        	return publisher.publish(EventType.PRODUCT_EANUPDATED, integrationEvent);
+    				        
     			}        
     		} catch (Exception e) {
     			log.error("Error Sending ProductEanUpdatedEvent integration Event " + integrationEvent.getMetadata() , e.getLocalizedMessage());

@@ -33,30 +33,30 @@ public class DecoratorHierarchyUpdateProductCommandBus implements CommandBus<Hie
     	        
     	        integrationEvent = new ProductHierarchyUpdatedIntegrationEvent();
     	        
-    	      
-    	        integrationEvent.getHierarchy().setSkuCode(command.getSkuCode());
-    	        integrationEvent.getHierarchy().setClassLevel(command.getClassLevel());
-    	        integrationEvent.getHierarchy().setClassName(command.getClassName());
-    	        integrationEvent.getHierarchy().setClazz(command.getClazz());
-    	        integrationEvent.getHierarchy().setDepartment(command.getDepartment());
-    	        integrationEvent.getHierarchy().setDepartmentLevel(command.getDepartmentLevel());
-    	        integrationEvent.getHierarchy().setDepartmentName(command.getDepartmentName());
-    	        integrationEvent.getHierarchy().setDivision(command.getDivision());
-    	        integrationEvent.getHierarchy().setDivisionLevel(command.getDivisionLevel());
-    	        integrationEvent.getHierarchy().setDivisionName(command.getDivisionName());
-    	        integrationEvent.getHierarchy().setSkuCodeLevel(command.getSkuCodeLevel());
-    	        integrationEvent.getHierarchy().setSkuName(command.getSkuName());
-    	        integrationEvent.getHierarchy().setSubClass(command.getSubClass());
-    	        integrationEvent.getHierarchy().setSubClassLevel(command.getSubClassLevel());
-    	        integrationEvent.getHierarchy().setSubClassName(command.getSubClassName());
-    	        integrationEvent.getHierarchy().setSubDepartment(command.getSubDepartment());
-    	        integrationEvent.getHierarchy().setSubDepartmentLevel(command.getSubDepartmentLevel());
-    	        integrationEvent.getHierarchy().setSubDepartmentName(command.getSubDepartmentName());
+    	        integrationEvent.setSku(command.getSku());
+    	        integrationEvent.getHierarchy().setSkuCode(command.getHierarchy().getSkuCode());
+    	        integrationEvent.getHierarchy().setClassLevel(command.getHierarchy().getClassLevel());
+    	        integrationEvent.getHierarchy().setClassName(command.getHierarchy().getClassName());
+    	        integrationEvent.getHierarchy().setClazz(command.getHierarchy().getClazz());
+    	        integrationEvent.getHierarchy().setDepartment(command.getHierarchy().getDepartment());
+    	        integrationEvent.getHierarchy().setDepartmentLevel(command.getHierarchy().getDepartmentLevel());
+    	        integrationEvent.getHierarchy().setDepartmentName(command.getHierarchy().getDepartmentName());
+    	        integrationEvent.getHierarchy().setDivision(command.getHierarchy().getDivision());
+    	        integrationEvent.getHierarchy().setDivisionLevel(command.getHierarchy().getDivisionLevel());
+    	        integrationEvent.getHierarchy().setDivisionName(command.getHierarchy().getDivisionName());
+    	        integrationEvent.getHierarchy().setSkuCodeLevel(command.getHierarchy().getSkuCodeLevel());
+    	        integrationEvent.getHierarchy().setSkuName(command.getHierarchy().getSkuName());
+    	        integrationEvent.getHierarchy().setSubClass(command.getHierarchy().getSubClass());
+    	        integrationEvent.getHierarchy().setSubClassLevel(command.getHierarchy().getSubClassLevel());
+    	        integrationEvent.getHierarchy().setSubClassName(command.getHierarchy().getSubClassName());
+    	        integrationEvent.getHierarchy().setSubDepartment(command.getHierarchy().getSubDepartment());
+    	        integrationEvent.getHierarchy().setSubDepartmentLevel(command.getHierarchy().getSubDepartmentLevel());
+    	        integrationEvent.getHierarchy().setSubDepartmentName(command.getHierarchy().getSubDepartmentName());
     	        
     	     
     	
     	        if  (this.bus.execute(command)) {
-    	            log.info("Sending ProductHierarchyUpdatedEvent integration Event " , command.getSkuCode());
+    	            log.info("Sending ProductHierarchyUpdatedEvent integration Event " , command.getSku());
     	       	 
     	        	publisher.publish(EventType.PRODUCT_HIERARCHYUPDATED, integrationEvent);
     				return true;    	        

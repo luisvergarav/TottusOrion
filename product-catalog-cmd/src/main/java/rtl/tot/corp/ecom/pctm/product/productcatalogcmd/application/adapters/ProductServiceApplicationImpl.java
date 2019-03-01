@@ -67,7 +67,7 @@ public boolean eanUpdateProduct(EanUpdateProductCommandImpl cmd) {
 public boolean hierarchyUpdateProduct(HierarchyUpdateProductCommandImpl cmd) {
 	
 	aggregate = new  ProductAggregate.Builder()
-			.sku(cmd.getSkuCode())
+			.sku(cmd.getSku())
 			.build();
 	if (this.aggregate.updateProduct(service))
 		return true;
