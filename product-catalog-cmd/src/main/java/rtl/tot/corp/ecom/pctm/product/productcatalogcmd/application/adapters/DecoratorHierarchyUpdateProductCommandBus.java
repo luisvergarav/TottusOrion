@@ -34,24 +34,24 @@ public class DecoratorHierarchyUpdateProductCommandBus implements CommandBus<Hie
     	        integrationEvent = new ProductHierarchyUpdatedIntegrationEvent();
     	        
     	      
-    	        integrationEvent.setSkuCode(command.getSkuCode());
-    	        integrationEvent.setClassLevel(command.getClassLevel());
-    	        integrationEvent.setClassName(command.getClassName());
-    	        integrationEvent.setClazz(command.getClazz());
-    	        integrationEvent.setDepartment(command.getDepartment());
-    	        integrationEvent.setDepartmentLevel(command.getDepartmentLevel());
-    	        integrationEvent.setDepartmentName(command.getDepartmentName());
-    	        integrationEvent.setDivision(command.getDivision());
-    	        integrationEvent.setDivisionLevel(command.getDivisionLevel());
-    	        integrationEvent.setDivisionName(command.getDivisionName());
-    	        integrationEvent.setSkuCodeLevel(command.getSkuCodeLevel());
-    	        integrationEvent.setSkuName(command.getSkuName());
-    	        integrationEvent.setSubClass(command.getSubClass());
-    	        integrationEvent.setSubClassLevel(command.getSubClassLevel());
-    	        integrationEvent.setSubClassName(command.getSubClassName());
-    	        integrationEvent.setSubDepartment(command.getSubDepartment());
-    	        integrationEvent.setSubDepartmentLevel(command.getSubDepartmentLevel());
-    	        integrationEvent.setSubDepartmentName(command.getSubDepartmentName());
+    	        integrationEvent.getHierarchy().setSkuCode(command.getSkuCode());
+    	        integrationEvent.getHierarchy().setClassLevel(command.getClassLevel());
+    	        integrationEvent.getHierarchy().setClassName(command.getClassName());
+    	        integrationEvent.getHierarchy().setClazz(command.getClazz());
+    	        integrationEvent.getHierarchy().setDepartment(command.getDepartment());
+    	        integrationEvent.getHierarchy().setDepartmentLevel(command.getDepartmentLevel());
+    	        integrationEvent.getHierarchy().setDepartmentName(command.getDepartmentName());
+    	        integrationEvent.getHierarchy().setDivision(command.getDivision());
+    	        integrationEvent.getHierarchy().setDivisionLevel(command.getDivisionLevel());
+    	        integrationEvent.getHierarchy().setDivisionName(command.getDivisionName());
+    	        integrationEvent.getHierarchy().setSkuCodeLevel(command.getSkuCodeLevel());
+    	        integrationEvent.getHierarchy().setSkuName(command.getSkuName());
+    	        integrationEvent.getHierarchy().setSubClass(command.getSubClass());
+    	        integrationEvent.getHierarchy().setSubClassLevel(command.getSubClassLevel());
+    	        integrationEvent.getHierarchy().setSubClassName(command.getSubClassName());
+    	        integrationEvent.getHierarchy().setSubDepartment(command.getSubDepartment());
+    	        integrationEvent.getHierarchy().setSubDepartmentLevel(command.getSubDepartmentLevel());
+    	        integrationEvent.getHierarchy().setSubDepartmentName(command.getSubDepartmentName());
     	        
     	     
     	
