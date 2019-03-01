@@ -4,7 +4,9 @@ public enum EventType {
     PRODUCT_CREATED("productCreated"),
     PRODUCT_UPDATED("productUpdated"),
     PRODUCT_DELETED("productDeleted"),
-	PRODUCT_STATEUPDATED("productStateUpdated");
+	PRODUCT_STATEUPDATED("productStateUpdated"),
+	PRODUCT_EANUPDATED("productEanUpdated"),
+	PRODUCT_HIERARCHYUPDATED("productHierarchyUpdated");
 
     private final String name;
 

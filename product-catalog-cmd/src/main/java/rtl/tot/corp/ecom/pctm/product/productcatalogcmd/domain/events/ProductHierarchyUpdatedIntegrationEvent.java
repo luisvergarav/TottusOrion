@@ -1,12 +1,7 @@
 package rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.events;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.validation.constraints.NotNull;
-
 import org.springframework.data.annotation.Id;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -17,55 +12,50 @@ import lombok.Data;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.output.asb.internal.EventDomain;
 @Data
 @JsonIgnoreProperties({"mapper", "entityType"})
-public class ProductCreatedIntegrationEvent  implements EventDomain {
+public class ProductHierarchyUpdatedIntegrationEvent  implements EventDomain {
 	@Id
 	@NotNull
-	String sku;
+	String skuCode;
 	@NotNull
-	String description;
+	String skuName;
 	@NotNull
-	Long levelId;
+	Long skuCodeLevel;
 	@NotNull
-	String brand;
+	String subClass;
 	@NotNull
-	String model;
+	String subClassName;
 	@NotNull
-	String productType;
+	Integer subClassLevel;
 	@NotNull
-	String status;
+	@JsonProperty(value="class")
+	String clazz;
 	@NotNull
-	Long ean;
+	String className;
 	@NotNull
-	String unitMeasure;
-	@NotNull
-	String saleUnit;
-	@NotNull
-	String posDescription;
-	@NotNull
-	String flejeDescription;
-	@NotNull
-	String codeSupplier;
-	@NotNull
-	String nameSupplier;
-	@NotNull
-	String qtyCasePack;
-	@NotNull
-	String nameCasePack;
-	@NotNull
-	String codeSUNAT;
-	@NotNull
-	List<EanSecundary> eanSecundary = new ArrayList<EanSecundary>();
-	@NotNull
-	Hierarchy hierarchy = new Hierarchy();
-	@NotNull
-	LogisticAttributes logisticAttributes = new LogisticAttributes();
-	@NotNull
-	Conservation conservation = new Conservation();
-	@NotNull
-	Assortment assortment = new Assortment();
-	@NotNull
-	List<Attribute> attribute = new ArrayList<Attribute>();
+	Integer classLevel;
 	
+	@NotNull
+	String subDepartment;
+	@NotNull
+	String subDepartmentName;
+	@NotNull
+	Integer subDepartmentLevel;
+	
+	@NotNull
+	String department;
+	@NotNull
+	String departmentName;
+	@NotNull
+	Integer departmentLevel;
+	
+	@NotNull
+	String division;
+	@NotNull
+	String divisionName;
+
+	@NotNull
+	Integer divisionLevel;
+
 	private final ObjectMapper mapper = new ObjectMapper();
 	 
 		
@@ -73,7 +63,7 @@ public class ProductCreatedIntegrationEvent  implements EventDomain {
 	@JsonIgnore
 	public String getEntityId() {
 		// TODO Auto-generated method stub
-		return sku;
+		return skuCode;
 	}
 
 	@Override

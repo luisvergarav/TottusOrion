@@ -53,4 +53,26 @@ public boolean stateUpdateProduct(StateUpdateProductCommandImpl cmd) {
 		return false;
 
 }
+public boolean eanUpdateProduct(EanUpdateProductCommandImpl cmd) {
+	
+	aggregate = new  ProductAggregate.Builder()
+			.sku(cmd.getSku())
+			.build();
+	if (this.aggregate.updateProduct(service))
+		return true;
+	else
+		return false;
+
+}
+public boolean hierarchyUpdateProduct(HierarchyUpdateProductCommandImpl cmd) {
+	
+	aggregate = new  ProductAggregate.Builder()
+			.sku(cmd.getSkuCode())
+			.build();
+	if (this.aggregate.updateProduct(service))
+		return true;
+	else
+		return false;
+
+}
 }

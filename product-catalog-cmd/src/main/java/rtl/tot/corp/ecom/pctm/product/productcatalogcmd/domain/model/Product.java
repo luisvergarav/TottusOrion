@@ -54,7 +54,7 @@ public class Product implements Serializable {
 	@NotNull
 	String flejeDescription;
 	@NotNull
-	Integer codeSupplier;
+	String codeSupplier;
 	@NotNull
 	String nameSupplier;
 	@NotNull

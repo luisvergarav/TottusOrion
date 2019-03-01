@@ -46,7 +46,7 @@ public class CreateProductCommandImpl implements CreateProductCommand<Product> {
 	@NotNull
 	String flejeDescription;
 	@NotNull
-	Integer codeSupplier;
+	String codeSupplier;
 	@NotNull
 	String nameSupplier;
 	@NotNull
