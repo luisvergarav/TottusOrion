@@ -58,8 +58,8 @@ public class DecoratorHierarchyUpdateProductCommandBus implements CommandBus<Hie
     	        if  (this.bus.execute(command)) {
     	            log.info("Sending ProductHierarchyUpdatedEvent integration Event " , command.getSku());
     	       	 
-    	        	publisher.publish(EventType.PRODUCT_HIERARCHYUPDATED, integrationEvent);
-    				return true;    	        
+    	        	return publisher.publish(EventType.PRODUCT_HIERARCHYUPDATED, integrationEvent);
+    				    	        
     			}        
     		} catch (Exception e) {
     			log.error("Error Sending ProductHierarchyUpdatedEvent integration Event " + integrationEvent.getMetadata() , e.getLocalizedMessage());

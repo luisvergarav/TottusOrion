@@ -122,8 +122,8 @@ public class DecoratorUpdateProductCommandBus implements CommandBus<UpdateProduc
     	        if  (this.bus.execute(command)) {
     	            log.info("Sending ProductUpdatedEvent integration Event " , command.getSku());
     	       	 
-    	        	publisher.publish(EventType.PRODUCT_UPDATED, integrationEvent);
-    				return true;    	        
+    	        	return publisher.publish(EventType.PRODUCT_UPDATED, integrationEvent);
+    				   	        
     			}        
     		} catch (Exception e) {
     			log.error("Error Sending ProductUpdatedEvent integration Event " + integrationEvent.getMetadata() , e.getLocalizedMessage());

@@ -123,8 +123,8 @@ public class DecoratorCreateProductCommandBus implements CommandBus<CreateProduc
     	        if  (this.bus.execute(command)) {
     	            log.info("Sending ProductCreateEvent integration Event " , command.getSku());
     	       	 
-    	        	publisher.publish(EventType.PRODUCT_CREATED, integrationEvent);
-    				return true;    	        
+    	        	return publisher.publish(EventType.PRODUCT_CREATED, integrationEvent);
+    				   	        
     			}        
     		} catch (Exception e) {
     			log.error("Error Sending ProductCreateEvent integration Event " + integrationEvent.getMetadata() , e.getLocalizedMessage());
