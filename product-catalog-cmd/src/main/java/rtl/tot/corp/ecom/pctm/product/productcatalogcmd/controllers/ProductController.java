@@ -153,7 +153,7 @@ public class ProductController {
 	
 	
 	
-	@RequestMapping(path = "/MREX/PRMG/v1.0/PRODUCT/{skuId}/{state}", method = PUT)
+	@RequestMapping(path = "/MREX/PRMG/v1.0/PRODUCT/{skuId}/state/{state}", method = PUT)
 	@ApiOperation(value = "Update a Product", response = APIResponse.class)
 	public ResponseEntity<APIResponse> updateProduct(@PathVariable String skuId, @PathVariable String state) {
 
