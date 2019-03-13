@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 import static org.springframework.web.bind.annotation.RequestMethod.PUT;
 
+import java.util.Locale;
+
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -88,7 +90,8 @@ public class ProductController {
 		//
 		// }
 		// e2e.setServiceRef("Appointment");
-
+		
+	
 		log.info("Create Product request.", request);
 		try {
 
