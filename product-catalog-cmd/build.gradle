@@ -10,6 +10,7 @@ buildscript {
     //compile.exclude(group: 'ch.qos.logback')
 }
 	dependencies {
+	  	classpath('info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.1.11')  
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 	}
 }
@@ -19,7 +20,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
-
+apply plugin: 'info.solidsoft.pitest'
 group = 'rtl.tot.corp.ecom.pctm.product'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
@@ -64,7 +65,7 @@ dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-data-rest')
 	
 	  compile "corp.falabella.event:event-adapter-azureservicebus-support:${eventAdapterASBVersion}"
-	
+		testCompile group: 'junit', name: 'junit-dep', version: '4.10'
 	
    	compileOnly("org.projectlombok:lombok:1.16.10")
    	// https://mvnrepository.com/artifact/com.microsoft.azure/azure-servicebus-spring-boot-starter
@@ -76,14 +77,30 @@ dependencies {
 	compile group: 'com.microsoft.azure', name: 'azure-eventhubs', version: '2.1.0'
 	// https://mvnrepository.com/artifact/com.microsoft.azure/azure-mgmt-eventhub
 	compile group: 'com.microsoft.azure', name: 'azure-mgmt-eventhub', version: '1.7.0'
-		//swagger
-    compile group: 'io.swagger', name: 'swagger-jersey-jaxrs', version: '1.5.17'
-	compile group: 'org.webjars', name: 'swagger-ui', version: '3.8.0'
-	// https://mvnrepository.com/artifact/com.microsoft.azure/azure-documentdb-spring-boot-starter
+	testCompile ("org.springframework.boot:spring-boot-starter-test:${springBootVersion}"){
+	 	exclude group: 'com.jayway.jsonpath' 
+	 	}
+	//swagger
+		compile "io.springfox:springfox-swagger-ui:${springfoxVersion}"
+    	compile "io.springfox:springfox-swagger2:${springfoxVersion}"
+    
+    // https://mvnrepository.com/artifact/com.microsoft.azure/azure-documentdb-spring-boot-starter
 compile group: 'com.microsoft.azure', name: 'azure-documentdb-spring-boot-starter', version: '2.0.5'
 	compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.9.7'
 	
     
+}
+
+pitest {
+    targetClasses = ['rtl.tot.corp.ecom.pctm.product.productcatalogcmd.*']
+    excludedClasses = []
+    excludedMethods = ['equals', 'hashCode']
+    threads = 4
+    outputFormats = ['XML', 'HTML']
+    coverageThreshold = 10
+    reportDir = 'build/reports/mutation-tests-results'
+    timestampedReports = false
+    mutators = ['RETURN_VALS']
 }
 
 
