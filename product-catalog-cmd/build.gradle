@@ -109,3 +109,5 @@ dependencyManagement {
 		mavenBom "com.microsoft.azure:azure-spring-boot-bom:${azureVersion}"
 	}
 }
+
+

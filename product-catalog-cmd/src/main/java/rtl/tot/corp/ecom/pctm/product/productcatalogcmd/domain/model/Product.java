@@ -54,10 +54,11 @@ public class Product implements Serializable {
 	@NotNull
 	String flejeDescription;
 	@NotNull
-	String codeSupplier;@NotNull
+	String codeSupplier;
+	@NotNull
 	String nameSupplier;
 	@NotNull
-	String qtyCasePack;
+	Float qtyCasePack;
 	@NotNull
 	String nameCasePack;
 	@NotNull

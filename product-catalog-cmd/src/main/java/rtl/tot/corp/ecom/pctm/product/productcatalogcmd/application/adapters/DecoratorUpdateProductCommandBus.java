@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 import lombok.extern.slf4j.Slf4j;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.events.Attribute;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.events.EanSecundary;
+import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.events.Multivalue;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.events.ProductUpdatedIntegrationEvent;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.ports.CommandBus;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.output.asb.internal.EventPublisherService;
@@ -116,6 +117,18 @@ public class DecoratorUpdateProductCommandBus implements CommandBus<UpdateProduc
     				integrationEvent.getLogisticAttributes().setWidth(command.getLogisticAttributes().getWidth());
     				integrationEvent.getLogisticAttributes().setWidthCasePack(command.getLogisticAttributes().getWidthCasePack());
     				
+    			}
+    			
+    			if (command.getMultivalue() != null) {
+    				for(rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.Multivalue mv: command.getMultivalue()) {
+    					Multivalue newMultivalue= new Multivalue();
+    					newMultivalue.setId(mv.getId());
+    					newMultivalue.setLovId(mv.getLovId());
+    					newMultivalue.setTitle(mv.getTitle());
+    					newMultivalue.setValue(mv.getValue());
+    					
+    					integrationEvent.getMultivalue().add(newMultivalue);
+    				}
     			}
     			
     	

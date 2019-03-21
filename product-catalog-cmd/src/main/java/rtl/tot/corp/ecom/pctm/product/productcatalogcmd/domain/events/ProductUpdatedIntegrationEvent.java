@@ -48,7 +48,7 @@ public class ProductUpdatedIntegrationEvent  implements EventDomain {
 	@NotNull
 	String nameSupplier;
 	@NotNull
-	String qtyCasePack;
+	Float qtyCasePack;
 	@NotNull
 	String nameCasePack;
 	@NotNull
@@ -65,7 +65,9 @@ public class ProductUpdatedIntegrationEvent  implements EventDomain {
 	Assortment assortment = new Assortment();
 	@NotNull
 	List<Attribute> attribute = new ArrayList<Attribute>();
-	
+	@NotNull
+	List<Multivalue> multivalue = new ArrayList<Multivalue>();
+
 	private final ObjectMapper mapper = new ObjectMapper();
 	 
 		

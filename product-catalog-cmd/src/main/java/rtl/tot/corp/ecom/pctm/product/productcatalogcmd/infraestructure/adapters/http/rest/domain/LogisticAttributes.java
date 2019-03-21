@@ -8,12 +8,12 @@ String unitWeight;
 Double valueWeight;
 String unitMeasure;
 Double length;
-Long width;
-Double high;
+Float width;
+Float high;
 String unitMeasureCasePack;
-Double lengthCasePack;
-Long widthCasePack;
-Double highCasePack;
+Float lengthCasePack;
+Float widthCasePack;
+Float highCasePack;
 Long palletHi;
-Integer palletTier;
+Float palletTier;
 }

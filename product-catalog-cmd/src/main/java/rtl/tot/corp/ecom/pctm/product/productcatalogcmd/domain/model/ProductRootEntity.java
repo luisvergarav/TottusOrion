@@ -12,7 +12,7 @@ public class ProductRootEntity {
 	
 	public ProductRootEntity(String sku, String description, Long levelId, String brand, String model,
 			String productType, String status, Long ean, String unitMeasure, String saleUnit, String posDescription,
-			String flejeDescription, Integer codeSupplier, String nameSupplier, String qtyCasePack, String nameCasePack,
+			String flejeDescription, Integer codeSupplier, String nameSupplier, Float qtyCasePack, String nameCasePack,
 			String codeSUNAT, List<EanSecundary> eanSecundary, Hierarchy hierarchy, LogisticAttributes logisticAttributes,
 			Conservation conservation, Assortment assortment, List<Attribute> attribute) {
 		super();
@@ -69,7 +69,7 @@ public class ProductRootEntity {
 	
 	String nameSupplier;
 	
-	String qtyCasePack;
+	Float qtyCasePack;
 	
 	String nameCasePack;
 	

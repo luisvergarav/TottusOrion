@@ -51,7 +51,7 @@ public class UpdateProduct implements Serializable {
 	@NotNull
 	String nameSupplier;
 	@NotNull
-	String qtyCasePack;
+	Float qtyCasePack;
 	@NotNull
 	String nameCasePack;
 	@NotNull
@@ -68,4 +68,6 @@ public class UpdateProduct implements Serializable {
 	Assortment assortment;
 	@NotNull
 	List<Attribute> attribute;
+	@NotNull
+	List<Multivalue> multivalue;
 }

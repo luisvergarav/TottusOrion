@@ -4,16 +4,18 @@ import lombok.Data;
 
 @Data
 public class LogisticAttributes {
-String unitWeight;
-Double valueWeight;
-String unitMeasure;
-Double length;
-Long width;
-Double high;
-String unitMeasureCasePack;
-Double lengthCasePack;
-Long widthCasePack;
-Double highCasePack;
-Long palletHi;
-Integer palletTier;
+
+	
+	String unitWeight;
+	Double valueWeight;
+	String unitMeasure;
+	Double length;
+	Float width;
+	Float high;
+	String unitMeasureCasePack;
+	Float lengthCasePack;
+	Float widthCasePack;
+	Float highCasePack;
+	Long palletHi;
+	Float palletTier;
 }

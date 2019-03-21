@@ -14,6 +14,7 @@ import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.mod
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.EanSecundary;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.Hierarchy;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.LogisticAttributes;
+import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.application.adapters.model.Multivalue;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.domain.ports.CreateProductCommand;
 import rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.http.rest.domain.Product;
 
@@ -50,7 +51,7 @@ public class CreateProductCommandImpl implements CreateProductCommand<Product> {
 	@NotNull
 	String nameSupplier;
 	@NotNull
-	String qtyCasePack;
+	Float qtyCasePack;
 	@NotNull
 	String nameCasePack;
 	@NotNull
@@ -67,6 +68,8 @@ public class CreateProductCommandImpl implements CreateProductCommand<Product> {
 	Assortment assortment = new Assortment();
 	@NotNull
 	List<Attribute> attribute = new ArrayList<Attribute>();
+	@NotNull
+	List<Multivalue> multivalue = new ArrayList<Multivalue>();
 
 
 	public CreateProductCommandImpl(Product request) {
@@ -156,6 +159,16 @@ public class CreateProductCommandImpl implements CreateProductCommand<Product> {
 			this.logisticAttributes.setWidth(request.getLogisticAttributes().getWidth());
 			this.logisticAttributes.setWidthCasePack(request.getLogisticAttributes().getWidthCasePack());
 			
+		}
+		if (request.getMultivalue() != null) {
+			for(rtl.tot.corp.ecom.pctm.product.productcatalogcmd.infraestructure.adapters.http.rest.domain.Multivalue mv: request.getMultivalue()) {
+				Multivalue newMultivalue= new Multivalue();
+				newMultivalue.setId(mv.getId());
+				newMultivalue.setLovId(mv.getLovId());
+				newMultivalue.setTitle(mv.getTitle());
+				newMultivalue.setValue(mv.getValue());
+				this.multivalue.add(newMultivalue);
+			}
 		}
 	}
 

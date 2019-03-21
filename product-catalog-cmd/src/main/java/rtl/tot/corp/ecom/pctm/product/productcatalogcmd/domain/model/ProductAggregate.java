@@ -81,7 +81,7 @@ public class ProductAggregate {
 		
 		String nameSupplier;
 		
-		String qtyCasePack;
+		Float qtyCasePack;
 		
 		String nameCasePack;
 		
@@ -174,7 +174,7 @@ public class ProductAggregate {
 			return this;
 		}
 		
-		public Builder setQtyCasePack(String qtyCasePack) {
+		public Builder setQtyCasePack(Float qtyCasePack) {
 			this.qtyCasePack = qtyCasePack;
 			return this;
 		}
